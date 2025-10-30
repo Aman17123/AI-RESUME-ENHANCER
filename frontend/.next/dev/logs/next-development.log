@@ -1,0 +1,336 @@
+[00:00:02.992] Server  LOG      ✓ Ready in 2.5s
+[00:04:35.932] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:36.156] Server  ERROR    ⨯ ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:36.375] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:36.375] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:36.415] Server  ERROR    ⨯ ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:36.487] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:38.422] Server  LOG      ○ Compiling /_not-found ...
+[00:04:39.166] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:40.977] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:41.654] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:41.654] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:41.654] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:41.748] Server  ERROR    ⨯ ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:41.888] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:42.401] Browser ERROR   uncaughtError: Error: Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+
+[00:04:42.502] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:06.754] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:05:06.755] Browser ERROR   ./src/app/Auth/page.js:5:1
+Module not found: Can't resolve '../lib/actions'
+  3 | import { useState } from 'react';
+  4 | // Assuming you have an 'authenticate' server action/API utility
+> 5 | import { authenticate } from '../lib/actions'; 
+    | ^
+  6 |
+  7 | export default function LoginPage() {
+  8 |   const [email, setEmail] = useState('');
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:06.921] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:05:06.921] Browser ERROR   ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+Import trace for requested module:
+./src/app/Auth/page.js
+[00:05:06.973] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:05:07.118] Server  ERROR    ⨯ ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+Import trace for requested module:
+./src/app/Auth/page.js
+[00:05:07.121] Browser ERROR   ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+Import trace for requested module:
+./src/app/Auth/page.js
+[00:05:07.380] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+[00:05:08.057] Browser ERROR   ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+[00:05:14.415] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:05:14.508] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:05:14.671] Server  ERROR    ⨯ ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+Import trace for requested module:
+./src/app/Auth/page.js
+[00:05:14.675] Browser ERROR   ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+Import trace for requested module:
+./src/app/Auth/page.js
+[00:05:14.727] Server  ERROR    ⨯ ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+Import trace for requested module:
+./src/app/Auth/page.js
+[00:05:14.982] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+
+[00:05:16.059] Browser ERROR   ./src/app/Auth/page.js
+Error:   × You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  │
+  │  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  │
+
+   ╭─[Z:\AI\ai_resume\frontend\src\app\Auth\page.js:1:1]
+ 1 │ import { useState } from 'react';
+   ·          ────────
+ 2 │ import Head from 'next/head';
+ 3 │ 
+ 3 │ // This is a basic Client Component, as it uses useState for interactivity.
+   ╰────
+[00:06:21.327] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:06:21.525] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:06:22.014] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
