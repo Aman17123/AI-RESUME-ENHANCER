@@ -1,9 +1,2 @@
-[00:00:01.922] Server  LOG      ✓ Ready in 1631ms
-[00:00:01.968] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:17.318] Server  LOG      ○ Compiling /Auth ...
-[00:00:17.992] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:18.982] Server  ERROR    ⨯ ReferenceError: Eye is not defined
-[00:00:19.022] Server  ERROR    ⨯ ReferenceError: Eye is not defined
-[00:00:19.062] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:20.092] Browser ERROR   uncaughtError: ReferenceError: Eye is not defined
-[00:00:31.033] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:02.367] Server  LOG      ✓ Ready in 2.1s
+[00:00:37.029] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
