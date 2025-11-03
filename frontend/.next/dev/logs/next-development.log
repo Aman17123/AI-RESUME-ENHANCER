@@ -1,0 +1,8 @@
+[00:00:03.604] Server  LOG      ✓ Ready in 3.1s
+[00:00:14.490] Server  LOG      ○ Compiling / ...
+[00:00:24.350] Server  ERROR    ⨯ Error: either NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY env variables or supabaseUrl and supabaseKey are required!
+[00:00:25.979] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.979] Browser ERROR   uncaughtError: Error: either NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY env variables or supabaseUrl and supabaseKey are required!
+[00:04:54.227] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:54.809] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:56.290] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
