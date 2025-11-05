@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Navbar from "./component/Navbar";
 import Hero from "./component/Hero";
+import HeroResumeSection from "./component/HeroResumeSection";
 import "./globals.css";
 
 // Dynamically import ResumeHighlight (client-side only)
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <ResumeHighlight />
+      <HeroResumeSection />
     </div>
   );
 }
