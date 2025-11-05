@@ -1,11 +1,51 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import cursor from "../../../public/cursor.png";
 import "../globals.css";
 
 export default function ResumeHighlight() {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  const smoothX = useSpring(mouseX, { stiffness: 300, damping: 40 });
+  const smoothY = useSpring(mouseY, { stiffness: 300, damping: 40 });
+
+  const [isInside, setIsInside] = useState(false);
+
+  const handleMouseMove = (e) => {
+    mouseX.set(e.clientX);
+    mouseY.set(e.clientY);
+  };
+
   return (
-    <section className="relative w-full overflow-hidden bg-[#0a0a0a] text-white pb-24">
+    <section
+      className={`relative w-full overflow-hidden bg-[#0a0a0a] text-white pb-24 transition-all duration-300 ${
+        isInside ? "cursor-none" : "cursor-auto"
+      }`}
+      onMouseEnter={() => setIsInside(true)}
+      onMouseLeave={() => setIsInside(false)}
+      onMouseMove={handleMouseMove}
+    >
+      {/* ===== Custom Cursor ===== */}
+      {isInside && (
+        <motion.div
+          style={{
+            translateX: smoothX,
+            translateY: smoothY,
+          }}
+          className="fixed top-0 left-0 z-50 pointer-events-none w-12 h-12"
+        >
+          <Image
+            src={cursor}
+            alt="custom magnifier cursor"
+            width={58}
+            height={58}
+            className="object-contain"
+          />
+        </motion.div>
+      )}
+
       {/* ===== Top Wave ===== */}
       <div className="absolute top-0 left-0 w-full">
         <svg
@@ -22,8 +62,8 @@ export default function ResumeHighlight() {
       </div>
 
       {/* ===== Content Wrapper ===== */}
-      <div className="relative max-w-6xl mx-auto flex  flex-col min-h-[70vh] items-center px-6 md:px-8 mt-20">
-        {/* Title - now LEFT aligned */}
+      <div className="relative max-w-6xl mx-auto flex flex-col min-h-[70vh] items-center px-6 md:px-8 mt-20">
+        {/* ===== Title ===== */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -31,13 +71,17 @@ export default function ResumeHighlight() {
           viewport={{ once: true }}
           className="text-3xl md:text-5xl font-semibold mt-5 josefin-sans mb-16 w-full text-left"
         >
-          <span className="text-[#4da3ff] underline josefin-sans">Lorem Ipsum</span>  is simply<br/> dummy
+          <span className="text-[#4da3ff] underline josefin-sans">
+            Lorem Ipsum
+          </span>{" "}
+          is simply
+          <br /> dummy
         </motion.h2>
 
-        {/* ===== Image + Callouts Container ===== */}
+        {/* ===== Image + Callouts ===== */}
         <div className="relative flex justify-center items-center mt-10">
           {/* ===== Center Image ===== */}
-          <div className="relative w-[260px] sm:w-[320px] md:w-[380px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl bg-white z-10">
+          <div className="relative w-[260px] sm:w-[320px] md:w-[380px] aspect-[3/4] rounded-[32px] overflow-hidden shadow-2xl border-[2px] border-white/80 bg-white z-10">
             <Image
               src="https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg"
               alt="Resume Highlight Example"
@@ -47,118 +91,109 @@ export default function ResumeHighlight() {
             />
           </div>
 
-          {/* === Top Right === */}
+          {/* ===== TOP RIGHT ===== */}
           <motion.div
-            initial={{ opacity: 0, x: 40, y: -20 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="absolute hidden md:flex flex-col items-start right-[440px] top-[22%]"
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+            className="absolute hidden md:flex items-center gap-1 right-[353px] top-[14%]"
           >
+            <p className="text-m text-gray-100 josefin-sans whitespace-nowrap">
+              Creative Direction
+            </p>
             <svg
-              width="200"
-              height="90"
-              viewBox="0 0 200 90"
+              className="relative z-10"
+              width="320"
+              height="110"
+              viewBox="0 0 30 170"
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* curve goes OUT from image toward the dot */}
               <path
-                d="M200,10 Q100,60 0,80"
-                stroke="#E5E7EB"
-                strokeWidth="1.5"
+                d="M222 161C143 145 65 130 0 40"
+                stroke="#ffffff"
+                strokeWidth="2"
                 fill="none"
               />
-              <circle cx="0" cy="80" r="4" fill="#E5E7EB" />
+              <circle cx="0" cy="40" r="8" fill="#ffffff" />
             </svg>
-            <p className="mt-3 text-sm text-gray-200 whitespace-nowrap pl-2">
-              Professional Summary
+          </motion.div>
+
+          {/* ===== TOP LEFT ===== */}
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+            className="absolute hidden md:flex items-center gap-2 left-[320px] top-[14%]"
+          >
+            <svg
+              width="280"
+              height="140"
+              viewBox="0 0 280 140"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0,120 C80,80 160,60 260,40"
+                stroke="#ffffff"
+                strokeWidth="2"
+                fill="none"
+              />
+              <circle cx="260" cy="40" r="8" fill="#ffffff" />
+            </svg>
+            <p className="text-base font-medium text-gray-100 josefin-sans whitespace-nowrap text-right -ml-2">
+              UI/UX Design
             </p>
           </motion.div>
 
-          {/* === Bottom Right === */}
+          {/* ===== BOTTOM RIGHT ===== */}
           <motion.div
-            initial={{ opacity: 0, x: 40, y: 20 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="absolute hidden md:flex flex-col items-start right-[440px] bottom-[22%]"
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+            className="absolute hidden md:flex items-center gap-3 right-[320px] bottom-[22%]"
           >
+            <p className="text-m josefin-sans text-gray-100 whitespace-nowrap">
+              Development
+            </p>
             <svg
-              width="200"
-              height="90"
-              viewBox="0 0 200 90"
+              width="280"
+              height="160"
+              viewBox="0 0 280 160"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <circle cx="10" cy="20" r="8" fill="#ffffff" />
               <path
-                d="M200,80 Q100,40 0,10"
-                stroke="#E5E7EB"
-                strokeWidth="1.5"
+                d="M10 20 C40 60, 100 100, 260 140"
+                stroke="#ffffff"
+                strokeWidth="2"
                 fill="none"
               />
-              <circle cx="0" cy="10" r="4" fill="#E5E7EB" />
             </svg>
-            <p className="mt-3 text-sm text-gray-200 whitespace-nowrap pl-2">
-              Experience Highlights
-            </p>
           </motion.div>
 
-          {/* === Top Left === */}
+          {/* ===== BOTTOM LEFT ===== */}
           <motion.div
-            initial={{ opacity: 0, x: -40, y: -20 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="absolute hidden md:flex flex-col items-end left-[440px] top-[22%]"
+            whileHover={{ scale: 1.2 }}
+            transition={{ type: "spring", stiffness: 200, damping: 10 }}
+            className="absolute hidden md:flex items-center gap-2 left-[320px] bottom-[22%]"
           >
             <svg
-              width="200"
-              height="90"
-              viewBox="0 0 200 90"
+              width="280"
+              height="160"
+              viewBox="0 0 280 160"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M0,10 Q100,60 200,80"
-                stroke="#E5E7EB"
-                strokeWidth="1.5"
+                d="M1 271C-9-4 154 19 183 117 C192 145 210 160 260 60"
+                stroke="#ffffff"
+                strokeWidth="2"
                 fill="none"
               />
-              <circle cx="200" cy="80" r="4" fill="#E5E7EB" />
+              <circle cx="260" cy="60" r="8" fill="#ffffff" />
             </svg>
-            <p className="mt-3 text-sm text-gray-200 whitespace-nowrap text-right pr-2">
-              Key Skills
-            </p>
-          </motion.div>
-
-          {/* === Bottom Left === */}
-          <motion.div
-            initial={{ opacity: 0, x: -40, y: 20 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            viewport={{ once: true }}
-            className="absolute hidden md:flex flex-col items-end left-[440px] bottom-[22%]"
-          >
-            <svg
-              width="200"
-              height="90"
-              viewBox="0 0 200 90"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0,80 Q100,40 200,10"
-                stroke="#E5E7EB"
-                strokeWidth="1.5"
-                fill="none"
-              />
-              <circle cx="200" cy="10" r="4" fill="#E5E7EB" />
-            </svg>
-            <p className="mt-3 text-sm text-gray-200 whitespace-nowrap text-right pr-2">
-              Education
+            <p className="text-base font-medium text-gray-100 josefin-sans whitespace-nowrap text-right -ml-2">
+              Brand Identity
             </p>
           </motion.div>
         </div>
 
-
-        {/* Bottom Caption */}
+        {/* ===== Bottom Caption ===== */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
