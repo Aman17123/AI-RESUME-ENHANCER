@@ -10,7 +10,6 @@ export default function ResumeHighlight() {
   const mouseY = useMotionValue(0);
   const smoothX = useSpring(mouseX, { stiffness: 300, damping: 40 });
   const smoothY = useSpring(mouseY, { stiffness: 300, damping: 40 });
-
   const [isInside, setIsInside] = useState(false);
 
   const handleMouseMove = (e) => {
@@ -69,7 +68,7 @@ export default function ResumeHighlight() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-semibold mt-5 josefin-sans mb-16 w-full text-left"
+          className="text-3xl md:text-5xl font-semibold mt-5 josefin-sans mb-16 text-center md:text-left w-full"
         >
           <span className="text-[#4da3ff] underline josefin-sans">
             Lorem Ipsum
@@ -81,7 +80,7 @@ export default function ResumeHighlight() {
         {/* ===== Image + Callouts ===== */}
         <div className="relative flex justify-center items-center mt-10">
           {/* ===== Center Image ===== */}
-          <div className="relative w-[260px] sm:w-[320px] md:w-[380px] aspect-[3/4] rounded-[32px] overflow-hidden shadow-2xl border-[2px] border-white/80 bg-white z-10">
+          <div className="relative w-[240px] sm:w-[300px] md:w-[380px] aspect-[3/4] rounded-[32px] overflow-hidden shadow-2xl border-[2px] border-white/80 bg-white z-10">
             <Image
               src="https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg"
               alt="Resume Highlight Example"
@@ -91,9 +90,10 @@ export default function ResumeHighlight() {
             />
           </div>
 
-          {/* ===== TOP RIGHT ===== */}
+          {/* ===== Desktop Lines (md+) ===== */}
+          {/* TOP RIGHT */}
           <motion.div
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 200, damping: 10 }}
             className="absolute hidden md:flex items-center gap-1 right-[353px] top-[14%]"
           >
@@ -117,9 +117,9 @@ export default function ResumeHighlight() {
             </svg>
           </motion.div>
 
-          {/* ===== TOP LEFT ===== */}
+          {/* TOP LEFT */}
           <motion.div
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 200, damping: 10 }}
             className="absolute hidden md:flex items-center gap-2 left-[320px] top-[14%]"
           >
@@ -142,9 +142,9 @@ export default function ResumeHighlight() {
             </p>
           </motion.div>
 
-          {/* ===== BOTTOM RIGHT ===== */}
+          {/* BOTTOM RIGHT */}
           <motion.div
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 200, damping: 10 }}
             className="absolute hidden md:flex items-center gap-3 right-[320px] bottom-[22%]"
           >
@@ -167,9 +167,9 @@ export default function ResumeHighlight() {
             </svg>
           </motion.div>
 
-          {/* ===== BOTTOM LEFT ===== */}
+          {/* BOTTOM LEFT */}
           <motion.div
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 200, damping: 10 }}
             className="absolute hidden md:flex items-center gap-2 left-[320px] bottom-[22%]"
           >
@@ -191,6 +191,27 @@ export default function ResumeHighlight() {
               Brand Identity
             </p>
           </motion.div>
+        </div>
+
+        {/* ===== Mobile Feature Points (visible only on small screens) ===== */}
+        <div className="flex flex-col items-center justify-center gap-3 mt-10 md:hidden">
+          {[
+            "🎨 Creative Direction",
+            "💡 UI/UX Design",
+            "💻 Development",
+            "🏷️ Brand Identity",
+          ].map((point, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-[#1a1a1a] px-4 py-2 rounded-xl text-gray-200 text-sm sm:text-base josefin-sans shadow-lg border border-white/10"
+            >
+              {point}
+            </motion.div>
+          ))}
         </div>
 
         {/* ===== Bottom Caption ===== */}
