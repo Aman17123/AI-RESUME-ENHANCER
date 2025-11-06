@@ -1,6 +1,171 @@
-[00:00:21.453] Server  LOG      ✓ Ready in 18.3s
-[00:00:24.558] Server  LOG      ○ Compiling / ...
-[00:00:56.673] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:02.152] Server  LOG      ✓ Ready in 1862ms
+[00:00:02.185] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:03.070] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.432] Server  ERROR    ⨯ ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.690] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.690] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.751] Server  ERROR    ⨯ ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.806] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.312] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.414] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.617] Server  ERROR    ⨯ ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.700] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:05.028] Browser ERROR   uncaughtError: Error: Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+
+[00:00:05.135] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:05.211] Server  LOG      ○ Compiling /_error ...
+[00:00:15.456] Browser ERROR   ./src/app/page.jsx:9:1
+Module not found: Can't resolve './component/theme-toggle'
+   7 | import UploadSection from "./component/Mid";
+   8 | import ResumeShowcase from "./component/hover";
+>  9 | import { ThemeToggle } from "./component/theme-toggle";
+     | ^
+  10 | import "./globals.css";
+  11 |
+  12 | // Dynamically import ResumeHighlight (client-side only)
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:16.130] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:16.494] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:16.496] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:16.497] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:16.515] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:16.517] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.331] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.331] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.331] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.331] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.331] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:00:17.331] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -27,154 +192,13 @@ It can also happen if the client has a browser extension installed which messes 
                       <SegmentTrieNode>
                       <link>
                       <RootLayout>
-                        <html lang="en">
+                        <html lang="en" suppressHydrationWarning={true}>
                           <body
                             className="__variable_188709 __variable_9a8899 antialiased"
 -                           cz-shortcut-listen="true"
                           >
                   ...
 
-[00:00:56.673] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:56.673] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:56.673] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:56.832] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:06:18.717] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.js">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="__variable_188709 __variable_9a8899 antialiased"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:06:18.717] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:06:18.717] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:06:18.717] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:06:18.717] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:09:39.048] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:09:39.048] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:09:39.048] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:09:39.048] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:02.269] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:02.269] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:02.269] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:02.269] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:04.714] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.js">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="__variable_188709 __variable_9a8899 antialiased"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:10:04.715] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:04.715] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:04.715] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:04.715] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:34.984] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:34.984] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:34.984] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:34.984] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:10:40.915] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:20:15.150] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:15.150] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:15.150] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:15.150] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:17.711] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
-      <AppDevOverlayErrorBoundary globalError={[...]}>
-        <ReplaySsrOnlyErrors>
-        <DevRootHTTPAccessFallbackBoundary>
-          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <Head>
-                  <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.js">
-                      <SegmentTrieNode>
-                      <link>
-                      <RootLayout>
-                        <html lang="en">
-                          <body
-                            className="__variable_188709 __variable_9a8899 antialiased"
--                           cz-shortcut-listen="true"
-                          >
-                  ...
-
-[00:20:17.711] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:17.711] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:17.711] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:17.711] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:29.131] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:29.131] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:29.131] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:29.131] Browser WARN    Image with src "https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-701751694713027d93zve4tde.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:20:33.840] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:25:29.444] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:17.331] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:17.331] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:17.331] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

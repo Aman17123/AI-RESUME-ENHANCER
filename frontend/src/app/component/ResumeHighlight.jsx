@@ -54,7 +54,12 @@ export default function ResumeHighlight() {
           preserveAspectRatio="none"
         >
           <path
-            d="M0,100 L480,40 L960,130 L1440,60 L1440,0 L0,0 Z"
+            d="M0,40 
+              L360,110 
+              L900,30 
+              L1440,90 
+              L1440,0 
+              L0,0 Z"
             fill="#F6FAFF"
           />
         </svg>
@@ -225,6 +230,8 @@ export default function ResumeHighlight() {
           Text of the printing and typesetting industry.
         </motion.p>
       </div>
+
+      
     </section>
   );
 }
