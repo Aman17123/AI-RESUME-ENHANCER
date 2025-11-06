@@ -68,7 +68,7 @@ export default function ResumeHighlight() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-semibold mt-5 josefin-sans mb-16 text-center md:text-left w-full"
+          className="text-3xl md:text-5xl  font-semibold mt-10 text-left  josefin-sans mb-16  sm:text-center  w-full"
         >
           <span className="text-[#4da3ff] underline josefin-sans">
             Lorem Ipsum
