@@ -10,8 +10,30 @@ const resumes = [
 
 export default function ResumeSection() {
   return (
-    <section className="relative w-full py-20 bg-gradient-to-b from-[#e9f1fa] to-[#f3f7fc] text-gray-800 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+    <section className="relative w-full py-20  overflow-hidden">
+      
+      {/* === SVG MOVED AND POSITIONED ABSOLUTELY === */}
+      <div className="absolute top-4 left-0 z-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="539"
+          height="52"
+          viewBox="0 0 539 52"
+          fill="none"
+        >
+          <path
+            d="M-6.99434 44.5989C-6.99434 44.5989 29.0445 -6.38692 53.4263 7.35251C69.4454 16.3795 49.0691 40.5334 67.4061 46.0054C87.2642 51.9312 87.6467 18.3735 108.811 17.9222C128.126 17.5104 131.275 36.7602 150.256 39.6932C177.599 43.9185 188.573 20.7984 216.184 17.9907C256.541 13.8868 276.156 38.4595 316.81 39.7993C356.352 41.1025 377.565 20.1477 416.563 25.593C436.634 28.3956 445.47 37.4413 465.611 39.8942C492.059 43.1151 508.759 41.625 533.665 33.8219"
+            stroke="#6F90B7"
+            strokeWidth="10"
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
+
+      {/* === CONTENT CONTAINER === */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        {/* SVG was removed from here */}
+        
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
