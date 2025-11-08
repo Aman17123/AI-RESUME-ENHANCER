@@ -5,7 +5,7 @@ import "../globals.css";
 
 export default function HeroResumeSection() {
   return (
-    <section className="relative w-full bg-gradient-to-tr from-[#f7faff] to-[#e9f1ff] overflow-hidden ">
+    <section className="relative w-full  overflow-hidden ">
       <svg xmlns="http://www.w3.org/2000/svg" width="399" height="560" viewBox="0 0 599 560" fill="none" className="-mt-50">
       <path d="M-20.5332 542.245C-20.5332 542.245 -46.1332 476.07 4.02843 413.529C99.9907 293.884 309.141 361.089 431.146 240.004C503.073 168.62 509.294 75.4285 509.294 75.4285" stroke="black"/>
       <path d="M-42.0879 528.464C-42.0879 528.464 -67.6879 462.289 -17.5263 399.748C78.4361 280.103 287.586 347.307 409.592 226.222C481.518 154.838 487.739 61.6473 487.739 61.6473" stroke="black"/>
@@ -13,26 +13,6 @@ export default function HeroResumeSection() {
       <path d="M-85.1953 500.925C-85.1953 500.925 -110.795 434.75 -60.6337 372.209C35.3286 252.564 244.479 319.768 366.484 198.683C438.411 127.299 444.632 34.1082 444.632 34.1082" stroke="black"/>
       <path d="M-106.746 487.159C-106.746 487.159 -132.346 420.984 -82.1845 358.443C13.7778 238.798 222.928 306.003 344.934 184.918C416.86 113.534 423.081 20.3426 423.081 20.3426" stroke="black"/>
       </svg>
-      {/* ===== Background Curves ===== */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-60 pointer-events-none">
-        <svg
-          viewBox="0 0 1440 320"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-[-120px] left-0 w-full"
-        >
-          <path
-            d="M0,96L60,85.3C120,75,240,53,360,69.3C480,85,600,139,720,138.7C840,139,960,85,1080,80C1200,75,1320,117,1380,138.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-            fill="url(#grad)"
-          />
-          <defs>
-            <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#dbe9ff" />
-              <stop offset="100%" stopColor="#f7faff" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
 
       {/* ===== Content ===== */}
       <div className="relative z-10 max-w-7xl -mt-80 josefin-sans mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 sm:px-10 lg:px-16 py-20">

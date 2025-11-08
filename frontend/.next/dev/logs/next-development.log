@@ -1,60 +1,538 @@
-[00:00:02.374] Server  LOG      ✓ Ready in 2.1s
-[00:00:05.744] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:02.597] Server  LOG      ✓ Ready in 2.1s
+[00:00:05.396] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:05.748] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:05.399] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:05.753] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:05.400] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:05.782] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:05.425] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:05.783] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:05.425] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.925] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.346] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.925] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.346] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.925] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.346] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.925] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.346] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.925] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.346] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:06.925] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:06.925] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:06.925] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:08.170] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.346] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:06.362] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.170] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.362] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.170] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.362] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.170] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.362] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.170] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.362] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:08.170] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:08.170] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:08.170] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:46.374] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:00:06.362] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:06.362] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:06.362] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:06.517] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:39.109] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:34.202] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:46.376] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:34.203] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:46.377] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:34.205] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:46.394] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:34.218] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:46.395] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:34.219] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:47.099] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:35.014] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:47.099] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:35.014] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:47.100] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:35.014] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:47.100] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:35.014] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:47.100] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+[00:02:35.014] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:47.100] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:47.100] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:47.100] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:35.014] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:35.632] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:35.632] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:35.632] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:35.632] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:35.632] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:02:35.632] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:35.632] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:35.632] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:35.632] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:15.349] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:15.349] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:15.349] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:15.349] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:15.349] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:03:15.349] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:49.286] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:53.359] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:53.359] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:53.359] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:04.378] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:04.380] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:04.381] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:04.396] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:04.397] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.253] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.253] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.253] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.253] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.253] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.253] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.253] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.253] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.253] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.924] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.924] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.924] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.924] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.924] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:04:05.924] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.924] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.924] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:05.924] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:08.955] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:08.989] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:05:59.871] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:59.875] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:59.876] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:59.890] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:05:59.891] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:00.722] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:00.722] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:00.723] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:00.723] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:00.723] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:00.723] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:00.723] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:00.723] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:00.723] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:01.500] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:01.500] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:01.501] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:01.501] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:01.501] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:06:01.501] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:01.501] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:01.501] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:06:01.501] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:04.527] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:04.530] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:04.532] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:04.548] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:04.549] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.364] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.364] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.364] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.364] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.364] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.364] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.364] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.364] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.364] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.971] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.971] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.971] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.971] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.971] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:07:05.971] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.971] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.971] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:05.971] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:07.037] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:10:20.899] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:20.900] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:20.901] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:20.916] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:20.917] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:21.617] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:21.617] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:21.617] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:21.617] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:21.617] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:21.617] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:22.404] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:22.404] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:22.404] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/736x/09/2a/62/092a62b0ccee9978b1da750eb4a9dcbf.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:22.404] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:10:40.363] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:40.365] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:40.366] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:40.379] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:40.381] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:41.250] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:41.250] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:41.250] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/736x/09/2a/62/092a62b0ccee9978b1da750eb4a9dcbf.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:10:41.250] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:10:53.616] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:53.616] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:53.616] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:53.616] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:53.616] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:10:53.616] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:40.047] Browser WARN    Image with src "https://i.pinimg.com/564x/24/15/f0/2415f01671c2555bb6e68e625198aa4a.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:12:42.469] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:43.184] Browser WARN    Image with src "https://i.pinimg.com/564x/0c/fd/23/0cfd23f62f1f69f5344ac5a0f703d5db.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:12:43.487] Browser WARN    Image with src "https://i.pinimg.com/564x/31/62/52/316252a767f253089fef445f63cc43b1.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:12:43.844] Browser WARN    Image with src "https://i.pinimg.com/564x/ee/15/d4/ee15d42f0911423b5e8b9ad6de6e7e3b.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:12:44.024] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:12:44.704] Browser WARN    Image with src "https://i.pinimg.com/564x/09/f9/0d/09f90d2dc6b65db4a7b1e1a07c8c18a2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:12:45.260] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:26.083] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:27.257] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:27.668] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:28.725] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:29.244] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:30.557] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:31.050] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:32.066] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:33.252] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:34.813] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:36.075] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:37.762] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:38.627] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:42.362] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:43.758] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:46.498] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:52.453] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:53.696] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:13:54.717] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:21.414] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:15:25.445] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:26.464] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:27.461] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:27.579] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:28.429] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:29.885] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:31.193] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:31.624] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:36.159] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:44.040] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:44.179] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:15:45.846] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:07.647] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:13.775] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:14.138] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:15.657] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:20.725] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:21.406] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:17:21.836] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:03.776] Browser WARN    Image with src "https://i.pinimg.com/736x/61/75/77/617577ef7a169f32b22ae9579e6c5cef.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:18:36.596] Browser WARN    Image with src "https://i.pinimg.com/736x/af/10/e4/af10e42f44b5fa84bcc12e0511316163.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:18:39.036] Browser WARN    Image with src "https://i.pinimg.com/736x/5f/a5/5c/5fa55c4ebc9ad09e34858631c9684f7f.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:18:39.786] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:40.060] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:41.841] Browser WARN    Image with src "https://i.pinimg.com/736x/25/74/81/257481fa127c031b5bfae629149f895b.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:18:42.794] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:45.710] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:18:46.247] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:40.899] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:42.381] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:42.791] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:49.485] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:51.887] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:53.728] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:54.180] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:19:56.194] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:20:38.549] Browser ERROR   uncaughtError: Error: Only two keyframes currently supported with spring and inertia animations. Trying to animate 0,-25,0. For more information and steps for solving, visit https://motion.dev/troubleshooting/spring-two-frames
+[00:21:47.490] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:47.492] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:47.493] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:47.507] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:47.508] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:48.485] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:48.485] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/736x/25/74/81/257481fa127c031b5bfae629149f895b.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/736x/09/2a/62/092a62b0ccee9978b1da750eb4a9dcbf.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:21:48.485] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:21:49.594] Browser WARN    Image with src "https://i.pinimg.com/736x/61/75/77/617577ef7a169f32b22ae9579e6c5cef.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:50.089] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:21:50.274] Browser WARN    Image with src "https://i.pinimg.com/736x/af/10/e4/af10e42f44b5fa84bcc12e0511316163.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:50.834] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:21:51.022] Browser WARN    Image with src "https://i.pinimg.com/736x/5f/a5/5c/5fa55c4ebc9ad09e34858631c9684f7f.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:21:52.818] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:21:53.204] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:04.177] Browser ERROR   uncaughtError: Error: Only two keyframes currently supported with spring and inertia animations. Trying to animate 0,-30,0. For more information and steps for solving, visit https://motion.dev/troubleshooting/spring-two-frames
+[00:22:07.621] Browser WARN    Image with src "https://i.pinimg.com/736x/61/75/77/617577ef7a169f32b22ae9579e6c5cef.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:22:18.832] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:18.834] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:18.835] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:18.847] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:18.848] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:19.740] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:19.741] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:19.741] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:19.741] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:19.741] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:19.741] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:22:19.741] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:22:19.741] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:22:19.741] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:22:19.741] Browser WARN    Image with src "https://i.pinimg.com/736x/09/2a/62/092a62b0ccee9978b1da750eb4a9dcbf.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:22:21.404] Browser WARN    Image with src "https://i.pinimg.com/736x/25/74/81/257481fa127c031b5bfae629149f895b.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:22.500] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:22.860] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:23.074] Browser WARN    Image with src "https://i.pinimg.com/736x/af/10/e4/af10e42f44b5fa84bcc12e0511316163.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:24.537] Browser WARN    Image with src "https://i.pinimg.com/736x/5f/a5/5c/5fa55c4ebc9ad09e34858631c9684f7f.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:25.579] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:26.905] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:27.479] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:27.479] Browser WARN    Image with src "https://i.pinimg.com/736x/61/75/77/617577ef7a169f32b22ae9579e6c5cef.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:22:30.347] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:31.467] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:22:32.231] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:23:34.794] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:23:36.383] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:25:55.066] Browser ERROR   uncaughtError: Error: Only two keyframes currently supported with spring and inertia animations. Trying to animate 0,-25,8,0. For more information and steps for solving, visit https://motion.dev/troubleshooting/spring-two-frames
+[00:26:03.966] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:03.969] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:03.970] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:03.993] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:03.994] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:04.968] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:04.968] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/736x/25/74/81/257481fa127c031b5bfae629149f895b.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/736x/09/2a/62/092a62b0ccee9978b1da750eb4a9dcbf.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:04.968] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:26:06.130] Browser WARN    Image with src "https://i.pinimg.com/736x/61/75/77/617577ef7a169f32b22ae9579e6c5cef.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:08.914] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:26:09.136] Browser WARN    Image with src "https://i.pinimg.com/736x/af/10/e4/af10e42f44b5fa84bcc12e0511316163.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:26:10.199] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:26:10.366] Browser WARN    Image with src "https://i.pinimg.com/736x/5f/a5/5c/5fa55c4ebc9ad09e34858631c9684f7f.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:16.492] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:27:21.141] Browser ERROR   uncaughtError: Error: Only two keyframes currently supported with spring and inertia animations. Trying to animate 0,-25,5,0. For more information and steps for solving, visit https://motion.dev/troubleshooting/spring-two-frames
+[00:27:27.774] Server  WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:27.776] Server  WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:27.777] Server  WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:27.793] Server  WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:27.794] Server  WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:28.738] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:28.738] Browser WARN    Image with src "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/736x/25/74/81/257481fa127c031b5bfae629149f895b.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/736x/09/2a/62/092a62b0ccee9978b1da750eb4a9dcbf.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:27:28.738] Browser WARN    Image with src "https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:27:28.973] Browser WARN    Image with src "https://i.pinimg.com/736x/61/75/77/617577ef7a169f32b22ae9579e6c5cef.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:29.761] Browser WARN    Image with src "https://i.pinimg.com/736x/af/10/e4/af10e42f44b5fa84bcc12e0511316163.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:31.024] Browser WARN    Image with src "https://i.pinimg.com/736x/5f/a5/5c/5fa55c4ebc9ad09e34858631c9684f7f.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:27:31.024] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:27:31.372] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:27:34.154] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:27:35.908] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:54.494] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:54.820] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:56.016] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:29:57.412] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:19.438] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:21.160] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:21.576] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:24.521] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:25.098] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:26.813] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:33:29.310] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:31.686] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:38.287] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:40.093] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
+[00:36:41.391] Browser WARN    'oklch(0.967 0.003 264.542)' is not an animatable color. Use the equivalent color code instead.. For more information and steps for solving, visit https://motion.dev/troubleshooting/color-not-animatable
