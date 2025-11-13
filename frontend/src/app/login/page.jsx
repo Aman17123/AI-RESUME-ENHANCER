@@ -20,7 +20,7 @@ export default function LoginPage() {
         alt="background"
         fill
         priority
-        className="absolute inset-0 -ml-5 object-cover opacity-50"
+        className="absolute inset-0 -ml-6 object-cover opacity-50"
       />
 
       {/* ✨ Animated Card */}
