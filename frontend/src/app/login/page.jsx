@@ -6,7 +6,7 @@ import { Input } from "../../../@/components/ui/input";
 import { Label } from "../../../@/components/ui/label";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "../../../public/bg.png"; // ✅ Import background image properly
+import bg from "../../../public/bg.png";
 import { Mail, Lock, LogIn, User, Shield, Chrome } from "lucide-react";
 
 export default function LoginPage() {
@@ -15,33 +15,22 @@ export default function LoginPage() {
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center bg-black text-white overflow-hidden">
-      {/* ✅ Background Image */}
       <Image
         src={bg}
         alt="background"
         fill
         priority
-        className="absolute inset-0 object-cover opacity-40"
+        className="absolute inset-0 -ml-5 object-cover opacity-50"
       />
 
-      {/* Background Grid */}
-      <div className="absolute inset-0 grid grid-cols-6 gap-2 opacity-30">
-        {Array.from({ length: 30 }).map((_, i) => (
-          <div
-            key={i}
-            className="bg-neutral-800/20 backdrop-blur-sm rounded-lg shadow-md"
-          />
-        ))}
-      </div>
-
-
-
-
-      {/* Center Card */}
+      {/* ✨ Animated Card */}
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{
+          duration: 0.5,
+          ease: "easeOut",
+        }}
       >
         <Card className="bg-neutral-900/80 text-white border border-neutral-800 shadow-xl w-[400px] rounded-2xl backdrop-blur-md">
           <CardContent className="p-6 flex flex-col space-y-6">

@@ -1,72 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🧠 AI Resume Enhancer
 
-## Getting Started
+An intelligent, AI-powered application that analyzes, optimizes, and enhances resumes using advanced Natural Language Processing (NLP) and Large Language Models (LLMs).
+It helps job seekers improve resume quality, tailor resumes to specific job descriptions, and boost their chances of landing interviews.
 
-First, run the development server:
+🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✨ Smart Resume Analysis — Detects strengths, weaknesses, and missing keywords.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🎯 Job-Specific Optimization — Customizes resumes based on target job descriptions or LinkedIn postings.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🔍 ATS Compatibility Check — Ensures your resume is Applicant Tracking System-friendly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🗣️ AI-Based Writing Suggestions — Enhances tone, clarity, and impact of resume bullet points.
 
-## Learn More
+📊 Skill Extraction & Summary Generation — Automatically highlights your top skills and achievements.
 
-To learn more about Next.js, take a look at the following resources:
+🧾 Multi-Format Support — Accepts PDF, DOCX, or plain text resumes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+☁️ Export Options — Download enhanced resumes or share via link.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧩 Tech Stack
+    Component	Technology
+    Frontend	React / Next.js / Tailwind CSS
+    Backend	Node.js / Express (or FastAPI / Flask for Python)
+    AI / NLP	OpenAI GPT-4 / Hugging Face Transformers
+    Storage	MongoDB / PostgreSQL / Firebase
+    File Handling	Multer / pdfminer / docx
+    Deployment	Vercel / Render / AWS / Railway
+    🛠️ Installation & Setup
+    1️⃣ Clone the repository
+    git clone https://github.com/yourusername/ai-resume-enhancer.git
+    cd ai-resume-enhancer
 
-## Deploy on Vercel
+2️⃣ Install dependencies
+Backend
+cd server
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Frontend
+cd client
+npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+3️⃣ Add environment variables
 
-## Getting Started
+Create a .env file in the server folder and include:
 
-First, run the development server:
+OPENAI_API_KEY=your_openai_api_key
+MONGO_URI=your_mongo_connection
+PORT=5000
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+4️⃣ Run the application
+# Start backend
+npm run dev --prefix server
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Start frontend
+npm run dev --prefix client
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Then open 👉 http://localhost:3000
+ in your browser.
 
-## Learn More
+💡 Usage
 
-To learn more about Next.js, take a look at the following resources:
+Upload your current resume.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(Optional) Paste a job description or role title.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The AI analyzes and enhances your resume.
 
-## Deploy on Vercel
+Download or copy the improved version.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧠 Example Use Cases
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Job seekers refining resumes for specific roles.
+
+Career coaches offering AI-driven insights.
+
+Recruitment platforms integrating resume enhancement APIs.
+
+📈 Future Improvements
+
+🔗 Integration with LinkedIn and Indeed APIs.
+
+🧬 Multi-language support.
+
+📄 AI-powered cover letter generation.
+
+🎨 Resume template selection and formatting.
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository.
+
+Create your feature branch (git checkout -b feature/amazing-feature).
+
+Commit changes (git commit -m 'Add some amazing feature').
+
+Push to branch (git push origin feature/amazing-feature).
+
+Open a pull request.
