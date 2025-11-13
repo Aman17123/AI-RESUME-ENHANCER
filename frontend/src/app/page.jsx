@@ -1,15 +1,16 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Navbar from "./component/Navbar";
-import Hero from "./component/Hero";
-import HeroResumeSection from "./component/HeroResumeSection";
-import UploadSection from "./component/Mid";
-import ResumeShowcase from "./component/hover";
+import Navbar from "./_component/Navbar";
+import Hero from "./_component/Hero";
+import HeroResumeSection from "./_component/HeroResumeSection";
+import UploadSection from "./_component/Mid";
+import Footer from "./_component/Footer";
+import HoverResume from "./_component/HoverResume";
 import "./globals.css";
 
 // Dynamically import ResumeHighlight (client-side only)
-const ResumeHighlight = dynamic(() => import("./component/ResumeHighlight"), {
+const ResumeHighlight = dynamic(() => import("./_component/ResumeHighlight"), {
   ssr: false,
 });
 
@@ -21,7 +22,8 @@ export default function HomePage() {
       <ResumeHighlight />
       <HeroResumeSection />
       <UploadSection />
-      <ResumeShowcase />
+      <HoverResume />
+      <Footer />
     </div>
   );
 }

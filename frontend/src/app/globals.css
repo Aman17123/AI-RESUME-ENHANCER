@@ -2,21 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 @import "tailwindcss";
-
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
-/* === Global Reset === */
 html, body {
-  @apply bg-gradient-to-b from-white to-blue-50;
+  @apply bg-gradient-to-b from-[#F8FAFF] via-[#E8EDFA] to-[#D7E3F5];
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scrollbar-width: none;
+  background-attachment: fixed;
 }
+
+/* Hide default scrollbar for a clean design */
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 .kosugi-maru-regular {
   font-family: "Kosugi Maru", sans-serif;
