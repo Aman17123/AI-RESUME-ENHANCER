@@ -38,7 +38,7 @@ export default function Navbar({
         {/* BUTTON */}
         <Link
           href="/login"
-          className="text-sm md:text-base text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-all duration-300 shadow-sm"
+          className="text-sm md:text-base text-white px-4  md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-all duration-300 shadow-sm"
           style={{ backgroundColor: buttonColor }}
         >
           Login / Sign up
