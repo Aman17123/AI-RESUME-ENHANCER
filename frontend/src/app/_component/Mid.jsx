@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import "../globals.css";
 
 export default function UploadSection() {
@@ -38,22 +39,24 @@ export default function UploadSection() {
         viewport={{ once: true }}
         className="flex gap-5"
       >
-        <button
+        <a
+          href="/upload"
           className="px-6 py-2 rounded-lg border-2 border-black font-medium text-base text-black 
                     bg-transparent transition-all duration-300 ease-out cursor-pointer
                     hover:bg-black hover:text-white hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)] active:translate-y-0"
         >
           Upload Resume
-        </button>
+        </a>
 
         {/* Dark Button */}
-        <button
+        <Link
+          href="/template"
           className="px-6 py-2 rounded-lg border-2 border-black font-medium text-base text-white 
                     bg-black transition-all duration-300 ease-out cursor-pointer
                     hover:bg-gray-800 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(0,0,0,0.25)] active:translate-y-0"
         >
-          Upload Resume
-        </button>
+          Select Template
+        </Link>
       </motion.div>
 
       {/* Bottom subtle reappearing text */}

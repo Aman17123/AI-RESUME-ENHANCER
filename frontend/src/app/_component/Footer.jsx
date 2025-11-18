@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#02285C] text-white py-10 px-6 sm:px-10 md:px-16">
+    <footer className="w-full bg-[#02285C]  text-white py-4 px-9 sm:px-10 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-6 md:gap-0 text-center md:text-left">
         
         {/* Left Section */}
-        <motion.div
+        <motion.div   
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

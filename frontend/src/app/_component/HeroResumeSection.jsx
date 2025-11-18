@@ -63,7 +63,7 @@ export default function HeroResumeSection() {
               className="object-contain"
             />
             <Image
-              src="https://www.citypng.com/public/uploads/preview/pornhub-logo-transparent-background-901751694713027d93zve4tde.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/NVIDIA_logo.svg/984px-NVIDIA_logo.svg.png?20250413133403"
               alt="Nvidia"
               width={80}
               height={40}
@@ -79,20 +79,35 @@ export default function HeroResumeSection() {
           </motion.div>
 
           {/* === Button === */}
-          <div className="flex sm:justify-start justify-center">
-            <motion.button
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className="
-                sm:mt-8   w-fit bg-black text-white text-sm sm:text-base
-                px-6 py-3 rounded-md shadow-md hover:scale-105 hover:bg-[#ff7b00]
-                transition-transform
-              "
-            >
-              Upload Resume
-            </motion.button>
-          </div>
+        <div className="flex sm:justify-start justify-center gap-5">
+          <motion.a
+            href="/upload"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="
+              sm:mt-8 w-fit bg-black text-white text-sm sm:text-base
+              px-6 py-3 rounded-md shadow-md hover:scale-105 hover:bg-[#ff7b00]
+              transition-transform cursor-pointer
+            "
+          >
+            Upload Resume
+          </motion.a>
+
+          <motion.a
+            href="/template"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="
+              sm:mt-8 w-fit bg-black text-white text-sm sm:text-base
+              px-6 py-3 rounded-md shadow-md hover:scale-105 hover:bg-[#ff7b00]
+              transition-transform cursor-pointer
+            "
+          >
+            Select Template
+          </motion.a>
+        </div>
 
 
           {/* === Bottom Caption === */}
@@ -114,7 +129,7 @@ export default function HeroResumeSection() {
               src="https://i.pinimg.com/736x/77/de/37/77de37a4f5877b9b176aff2b6ba650f0.jpg"
               alt="Resume Example"
               fill
-              quality={100}
+              quality={75}
               className="object-cover"
             />
           </div>
@@ -128,7 +143,7 @@ export default function HeroResumeSection() {
               src="https://i.pinimg.com/1200x/56/7a/11/567a11ce55be09f4101baf1b6a72d030.jpg"
               alt="Mini Resume"
               fill
-              quality={100}
+              quality={75}
               className="object-cover  "
             />
           </div>

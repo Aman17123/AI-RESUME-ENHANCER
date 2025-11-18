@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
 
           <Link
-            href="#"
+            href="/upload"
             className="bg-[#021F81] text-white text-sm josefin-sans sm:text-base px-6 py-2.5 rounded-2xl hover:bg-[#031a66] transition-all shadow-md"
           >
             Upload Resume
@@ -63,7 +63,7 @@ export default function Hero() {
               src="https://i.pinimg.com/1200x/48/7c/13/487c13a9ed77a264ff9193f61c9261de.jpg"
               alt="Resume Center"
               fill
-              quality={100}
+              quality={75}
               sizes="(max-width: 640px) 60vw, (max-width: 1024px) 45vw, 30vw"
               className="object-cover"
             />
@@ -89,7 +89,7 @@ export default function Hero() {
               src="https://i.pinimg.com/736x/f7/7c/c9/f77cc9be9b7ee9316c0e707a38590c00.jpg"
               alt="Resume Left"
               fill
-              quality={100}
+              quality={75}
               sizes="(max-width: 640px) 40vw, (max-width: 1024px) 25vw, 15vw"
               className="object-cover"
             />
@@ -115,7 +115,7 @@ export default function Hero() {
               src="https://i.pinimg.com/736x/e6/8d/b3/e68db3e71629d4a89e22ff3490b843d2.jpg"
               alt="Resume Right"
               fill
-              quality={100}
+              quality={75}
               sizes="(max-width: 640px) 40vw, (max-width: 1024px) 25vw, 15vw"
               className="object-cover"
             />

@@ -134,7 +134,7 @@ export default function ResumeHighlight() {
                 src={resumeImages[imgIndex]}
                 alt="Resume Front"
                 fill
-                quality={100}
+                quality={75}
                 className="object-cover"
               />
             </div>
@@ -151,7 +151,7 @@ export default function ResumeHighlight() {
                 src={resumeImages[(imgIndex + 1) % resumeImages.length]}
                 alt="Resume Back"
                 fill
-                quality={100}
+                quality={75}
                 className="object-cover"
               />
             </div>
