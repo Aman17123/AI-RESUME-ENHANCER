@@ -33,4 +33,16 @@ async def match_job(
 
   try:
     resume_text = resume_data.get("resume_text")
-    if not 
+    if not resume_text:
+      raise HTTPException(status_code=400, detail="Resume text is required in the request body.")
+    
+    #1. Get initial job matches 
+    job_matches = await matching_service.match_resume_to_jobs(resume_text)
+
+    #2. Get detailed recommendations for the top matches
+    recommendations = await recommendation_service.get_recommendations( resume_text, job_matches)
+
+    return {"status": "success", "recommendations":recommendations}
+  
+  except Exception as e:
+    raise HTTPException(status_code=500, detail = str(e))
