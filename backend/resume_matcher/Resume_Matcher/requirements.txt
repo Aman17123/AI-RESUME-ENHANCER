@@ -1,19 +1,25 @@
-# Web framework
+requirements.txt
+# --- Web Framework ---
 fastapi==0.104.1
-uvicorn[standard]==0.24.0
+uvicorn==0.24.0
 
-# For handling file uploads
+# --- File Uploads ---
 python-multipart==0.0.6
 
-# For parsing PDFs and DOCX files
+# --- Resume Parsing ---
 PyPDF2==3.0.1
 python-docx==0.8.11
 
-# For AI/ML functionlity
-openapi==1.3.5
+# --- AI (LLM Integration) ---
+openai==1.3.5
+httpx==0.25.2
 
-# For data validation and settings
+# --- Data Validation ---
 pydantic==2.5.0
+pydantic-settings==2.1.0
 
-# For generating Word Documents
-# (python-docx is already included above)
+# --- Logging ---
+loguru==0.7.2
+
+# --- Env Config ---
+python-dotenv==1.0.1
