@@ -101,3 +101,11 @@ Commit changes (git commit -m 'Add some amazing feature').
 Push to branch (git push origin feature/amazing-feature).
 
 Open a pull request.
+
+// Proj Structure for Template 
+Missing Folder	                                          Purpose
+src/templates/	                                          JSON data for templates
+src/components/ResumeRenderers/	                          Rendering the preview
+src/store/	                                              For Zustand store
+src/app/template/[id]/page.jsx	                          Editor page
+public/template-previews/	                              Image previews

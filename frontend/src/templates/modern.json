@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "title": "",
+  "email": "",
+  "phone": "",
+  "linkedin": "",
+  "github": "",
+  "summary": "",
+  "skills": [],
+  "experience": [
+    {
+      "role": "",
+      "company": "",
+      "startDate": "",
+      "endDate": "",
+      "description": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "tech": "",
+      "description": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "",
+      "school": "",
+      "year": ""
+    }
+  ]
+}

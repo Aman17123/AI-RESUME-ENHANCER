@@ -2,7 +2,7 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import cursor from "../../../public/cursor.png";
+import cursor from "../../../public/images/cursor.png";
 import "../globals.css";
 
 export default function ResumeHighlight() {

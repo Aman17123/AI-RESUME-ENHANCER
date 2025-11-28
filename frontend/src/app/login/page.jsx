@@ -6,7 +6,7 @@ import { Input } from "../../../@/components/ui/input";
 import { Label } from "../../../@/components/ui/label";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "../../../public/bg.png";
+import bg from "../../../public/images/bg.png";
 import { Mail, Lock, LogIn, User, Shield, Chrome } from "lucide-react";
 
 export default function LoginPage() {
@@ -20,7 +20,7 @@ export default function LoginPage() {
         alt="background"
         fill
         priority
-        className="absolute inset-0 -ml-6 object-cover opacity-50"
+        className="absolute inset-0 md:-mt-5  -ml-4 object-cover opacity-50"
       />
 
       {/* ✨ Animated Card */}

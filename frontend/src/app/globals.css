@@ -31,9 +31,7 @@ html, body {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
 }
-
-
-/x* Scrollbar width */
+ 
 ::-webkit-scrollbar {
   width: 10px;
 }

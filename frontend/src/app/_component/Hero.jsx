@@ -82,7 +82,7 @@ export default function Hero() {
             boxShadow: "0 20px 45px rgba(0,0,0,0.15)",
             transition: { duration: 0.25, ease: "easeOut" },
           }}
-          className="absolute left-1/2 z-100 -translate-x-[145%] -translate-y-2 w-[30%] sm:w-[25%] md:w-[20%] rounded-xl shadow-xl rotate-[-12deg] overflow-hidden bg-white"
+          className="absolute left-1/2 z-30 sm:top-auto -translate-x-[145%] -translate-y-2 w-[30%] sm:w-[25%] md:w-[20%] rounded-xl shadow-xl rotate-[-12deg] overflow-hidden bg-white"
         >
           <div className="relative pb-[141.4%]">
             <Image
@@ -108,7 +108,7 @@ export default function Hero() {
             boxShadow: "0 20px 45px rgba(0,0,0,0.15)",
             transition: { duration: 0.25, ease: "easeOut" },
           }}
-          className="absolute z-100 left-1/2 translate-x-[55%] -translate-y-30 w-[30%] sm:w-[25%] md:w-[20%] rounded-xl shadow-xl rotate-[12deg] overflow-hidden bg-white border-[0.3px] border-white/80"
+          className="absolute z-30 left-1/2 sm:top-auto  translate-x-[55%] -translate-y-30 w-[30%] sm:w-[25%] md:w-[20%] rounded-xl shadow-xl rotate-[12deg] overflow-hidden bg-white border-[0.3px] border-white/80"
         >
           <div className="relative pb-[141.4%]">
             <Image

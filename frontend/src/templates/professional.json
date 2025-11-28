@@ -1,0 +1,43 @@
+{
+  "name": "",
+  "title": "",
+  "email": "",
+  "phone": "",
+  "location": "",
+  "summary": "",
+  "experience": [
+    {
+      "role": "",
+      "company": "",
+      "startDate": "",
+      "endDate": "",
+      "description": "",
+      "keyAchievements": [
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "",
+      "school": "",
+      "year": "",
+      "description": ""
+    }
+  ],
+  "skills": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "languages": [
+    "",
+    "",
+    ""
+  ]
+}
