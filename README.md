@@ -1,4 +1,4 @@
-🧠 AI Resume Enhancer
+🧠 AI Resume Enhancer // continue .. Here we go again
 
 An intelligent, AI-powered application that analyzes, optimizes, and enhances resumes using advanced Natural Language Processing (NLP) and Large Language Models (LLMs).
 It helps job seekers improve resume quality, tailor resumes to specific job descriptions, and boost their chances of landing interviews.
