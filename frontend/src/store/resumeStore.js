@@ -67,4 +67,14 @@ export const useResumeStore = create((set, get) => ({
 
   // 🔥 Save snapshot for autosave or export
   snapshot: () => deepClone(get().data),
+
+  // 🔥 Save resume to localStorage
+  saveResume: async (resumeData) => {
+    try {
+      localStorage.setItem("resume_saved", JSON.stringify(resumeData));
+      return true;
+    } catch {
+      return false;
+    }
+  },
 }));

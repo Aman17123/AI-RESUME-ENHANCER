@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
-import { useParams, useRouter } from 'next/navigation';
+import { useEffect, useMemo, useState } from "react";
+import { useParams } from 'next/navigation';
 import ResumeForm from "../../../components/Editor/ResumeForm";
 import { useResumeStore } from "../../../store/resumeStore";
 import ClassicTemplate from "../../../components/ResumeRenderers/ClassicTemplate";
@@ -11,17 +11,15 @@ import ProfessionalTemplate from "../../../components/ResumeRenderers/Profession
 import { downloadResumePDF } from "../../../utils/downloadPDF";
 import {
   FileText, Download, Share, Eye, Monitor, Smartphone,
-  Palette, Save, Maximize, Minimize, Settings, Grid3x3, Type, Image,
-  ZoomIn, ZoomOut, Move, File, Layers, CheckCircle, Info,
+  Save, Maximize, Minimize, Type, Settings,
+  ZoomIn, ZoomOut, File, Layers, CheckCircle, Info,
   Code, User, Briefcase, GraduationCap, Award, MessageSquare,
-  Star, Plus, X, Menu, Mail, Phone, MapPin, Calendar, Link,
-  ArrowUp, ArrowDown, Trash, PlusCircle, Edit3
+  Star, Plus, Menu
 } from "lucide-react";
 
 
 export default function EditorPage() {
   const params = useParams();
-  const router = useRouter();
   const { id: templateId } = params;
   const { data, setFullData, saveResume, addArrayItem } = useResumeStore();
   const [ready, setReady] = useState(false);

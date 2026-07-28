@@ -1,17 +1,12 @@
-<<<<<<< HEAD
-🧠 AI Resume Enhancer // continue .. Here we go again
-=======
-# AI Resume Enhancer
->>>>>>> 3181d37 (project building started after long time)
+# AI Resume Studio
 
-An intelligent application that helps you create, customize, and optimize resumes with AI-powered analysis and professional templates.
+A frontend-only resume builder with multiple templates, live preview, and PDF export.
 
 ## Features
 
 - 🎨 **Multiple Resume Templates** — Classic, Modern, Minimal, and Professional designs
 - ✏️ **Resume Builder** — Interactive editor with live preview
 - 📄 **PDF Export** — Download your resume as a PDF
-- 🔍 **AI Analysis** — Upload your resume for ATS score, keyword detection, and suggestions
 - 📱 **Responsive Design** — Works on desktop and mobile
 
 ## Tech Stack
@@ -56,3 +51,11 @@ frontend/
     lib/              # Library utilities
   public/             # Static assets
 ```
+
+## Features Affected by No Backend
+
+The following features do not work without a backend or external AI API:
+- **AI Resume Analysis** — ATS scoring, keyword detection, and AI suggestions
+- **User Authentication** — Login/Sign up is UI only (no auth backend)
+- **Resume Upload Parsing** — File upload on `/upload` page is mock-only
+- **Cloud Save** — Resumes save to localStorage only
