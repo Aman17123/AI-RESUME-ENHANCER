@@ -359,7 +359,10 @@ export default function ResumeForm({ activeSection, selectedTemplate = "classic"
 
   // mount guard
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const id = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(id);
+  }, []);
 
   // Zustand store
   const formData = useResumeStore((s) => s.data);
@@ -615,9 +618,14 @@ const InputField = React.memo(function InputField({
   const [loading, setLoading] = useState(false);
 
   const form = useResumeStore((s) => s.data);
+  const formCountry = form?.country;
+  const formState = form?.state;
 
   useEffect(() => {
-    if (!value) setError("");
+    if (!value) {
+      const id = setTimeout(() => setError(""), 0);
+      return () => clearTimeout(id);
+    }
   }, [value]);
 
   const validate = useCallback(
@@ -648,7 +656,7 @@ const InputField = React.memo(function InputField({
           const list = getCountryList();
           results = list.filter((c) => c.toLowerCase().includes(query.toLowerCase()));
         } else if (source === "states") {
-          const selectedCountry = form?.country || "";
+          const selectedCountry = formCountry || "";
           const iso = COUNTRY_NAME_TO_ISO[(selectedCountry || "").toLowerCase()];
           if (iso) {
             results = getStateListForCountry(iso)
@@ -661,8 +669,8 @@ const InputField = React.memo(function InputField({
             results = allStates.filter((s) => s.toLowerCase().includes(query.toLowerCase()));
           }
         } else if (source === "cities") {
-          const selectedCountry = form?.country || "";
-          const selectedState = form?.state || "";
+          const selectedCountry = formCountry || "";
+          const selectedState = formState || "";
           const countryIso = COUNTRY_NAME_TO_ISO[(selectedCountry || "").toLowerCase()];
           let matched = [];
           if (countryIso && selectedState) {
@@ -691,7 +699,7 @@ const InputField = React.memo(function InputField({
       setOptions(results.slice(0, 50));
       setLoading(false);
     },
-    [source, form?.country, form?.state]
+    [source, formCountry, formState]
   );
 
   const debouncedFetch = useMemo(() => debounce(fetchOptions, 300), [fetchOptions]);

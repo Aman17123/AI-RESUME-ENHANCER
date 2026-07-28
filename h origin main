@@ -1,0 +1,28 @@
+* [33m3181d37[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;32mbackup-before-sync[m[33m)[m project building started after long time
+* [33m273f262[m backup before cleanup
+[31m|[m * [33m4952fa0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update README.md
+[31m|[m [32m|[m *   [33mf580ae0[m[33m ([m[1;31morigin/kshitiz[m[33m)[m Merge pull request #19 from Aman17123/main
+[31m|[m [32m|[m [33m|[m[32m\[m  
+[31m|[m [32m|[m [33m|[m[32m/[m  
+[31m|[m [32m|[m[32m/[m[33m|[m   
+[31m|[m * [33m|[m [33mbc69481[m Merge pull request #18 from Aman17123/model
+[31m|[m[31m/[m[36m|[m [33m|[m 
+[31m|[m * [33m|[m [33m758b6a2[m[33m ([m[1;31morigin/model[m[33m)[m ai generated resume to docx
+[31m|[m * [33m|[m [33ma4d7002[m dasfhi
+[31m|[m [36m|[m *   [33mc179d7a[m Merge branch 'kshitiz' of https://github.com/Aman17123/AI-RESUME-ENHANCER into kshitiz update
+[31m|[m [36m|[m [1;31m|[m[1;32m\[m  
+[31m|[m [36m|[m [1;31m|[m *   [33m30e2dc7[m Merge pull request #17 from Aman17123/main
+[31m|[m [36m|[m [1;31m|[m [1;33m|[m[31m\[m  
+[31m|[m [36m|[m[31m_[m[1;31m|[m[31m_[m[1;33m|[m[31m/[m  
+[31m|[m[31m/[m[36m|[m [1;31m|[m [1;33m|[m   
+* [36m|[m [1;31m|[m [1;33m|[m [33m6a20075[m resume editor and template section but still some bugs: downlaod bug
+[1;34m|[m [36m|[m * [1;33m|[m [33m6542c10[m update
+[1;34m|[m [36m|[m[1;34m/[m [1;33m/[m  
+[1;34m|[m[1;34m/[m[36m|[m [1;33m|[m   
+* [36m|[m [1;33m|[m [33m3288a59[m Merge pull request #16 from Aman17123/model
+[1;35m|[m[36m\[m[36m|[m [1;33m|[m 
+[1;35m|[m * [1;33m|[m [33me170c44[m mmm
+* [1;36m|[m [1;33m|[m [33m9ee4200[m Merge pull request #15 from Aman17123/model
+[31m|[m[1;36m\[m[1;36m|[m [1;33m|[m 
+[31m|[m * [1;33m|[m   [33md7a9466[m merge
+[31m|[m [33m|[m[34m\[m [1;33m\[m  

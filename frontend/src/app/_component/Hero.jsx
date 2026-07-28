@@ -29,7 +29,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
           <div className="flex font-bold josefin-sans items-center gap-2 text-sm sm:text-base text-gray-800">
             <span className="text-yellow-500 text-lg">★★★★</span>
-            4000+ Resume's fixed
+            4000+ Resumes fixed
           </div>
 
           <Link

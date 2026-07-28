@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="h-screen w-full flex items-center justify-center bg-[#05070d] relative overflow-hidden px-6">
@@ -16,16 +18,16 @@ export default function NotFound() {
 
         {/* Message */}
         <p className="text-lg mt-4 text-gray-400 max-w-sm text-center">
-          The page you're looking for might be missing or unavailable.
+          The page you are looking for might be missing or unavailable.
         </p>
 
         {/* Button */}
-        <a
+        <Link
           href="/"
           className="mt-8 px-7 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold shadow-lg transition-all duration-300 backdrop-blur-md"
         >
           Return Home
-        </a>
+        </Link>
 
         {/* Accent Line */}
         <div className="mt-8 w-20 h-[2px] bg-gray-500/40 rounded-full" />
