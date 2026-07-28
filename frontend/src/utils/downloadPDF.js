@@ -1,79 +1,106 @@
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import { getPDFTemplate } from '../components/PDFTemplates/PDFTemplateFactory';
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
+import React from "react";
+import { renderToString } from "react-dom/server";
+import { getPDFTemplate } from "../components/PDFTemplates/PDFTemplateFactory";
 
 export const downloadResumePDF = async (data, theme, templateLayout) => {
+  let container;
+
   try {
-    // Get the appropriate template component
     const TemplateComponent = getPDFTemplate(templateLayout);
-    
-    // Create a container element to render our component
-    const container = document.createElement('div');
-    container.style.width = '210mm'; // A4 width
-    container.style.padding = '0';
-    container.style.backgroundColor = 'white';
-    container.style.position = 'absolute';
-    container.style.left = '-9999px'; // Move off-screen
+
+    // 1️⃣ Create hidden container
+    container = document.createElement("div");
+    container.style.width = "210mm";
+    container.style.backgroundColor = "#ffffff";
+    container.style.position = "fixed";
+    container.style.top = "0";
+    container.style.left = "-10000px";
+    container.style.zIndex = "-1";
+
+    // 🔥 IMPORTANT: mark as PDF export
+    container.className = "pdf-export";
+
     document.body.appendChild(container);
 
-    // Render the component to the container
-    const componentString = renderToString(
+    // 2️⃣ Inject PDF-safe CSS (kills lab/oklch)
+    const style = document.createElement("style");
+    style.innerHTML = `
+      .pdf-export,
+      .pdf-export * {
+        color: rgb(0,0,0) !important;
+        background-color: rgb(255,255,255) !important;
+        border-color: rgb(0,0,0) !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+    `;
+    container.appendChild(style);
+
+    // 3️⃣ Render React → HTML
+    container.innerHTML += renderToString(
       <TemplateComponent data={data} />
     );
-    container.innerHTML = componentString;
 
-    // Wait for any images to load
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // 4️⃣ Wait for fonts/images
+    await new Promise((r) => setTimeout(r, 800));
 
-    // Convert to canvas
+    // 5️⃣ html2canvas (SAFE MODE)
     const canvas = await html2canvas(container, {
-      scale: 2, // Higher resolution
+      scale: 2,
       useCORS: true,
       allowTaint: true,
-      backgroundColor: '#ffffff',
-      width: container.offsetWidth,
-      height: container.offsetHeight,
-      logging: false // Disable logging for cleaner console
+      backgroundColor: "#ffffff",
+      logging: false,
+      onclone: (doc) => {
+        doc.querySelectorAll("*").forEach((el) => {
+          const cs = getComputedStyle(el);
+
+          if (cs.color?.includes("lab")) el.style.color = "#000";
+          if (cs.backgroundColor?.includes("lab"))
+            el.style.backgroundColor = "#fff";
+          if (cs.borderColor?.includes("lab"))
+            el.style.borderColor = "#000";
+        });
+      },
     });
 
-    // Remove the container
+    // 6️⃣ Cleanup
     document.body.removeChild(container);
 
-    // Create PDF
-    const imgData = canvas.toDataURL('image/png');
+    // 7️⃣ Create PDF
     const pdf = new jsPDF({
-      orientation: 'portrait',
-      unit: 'mm',
-      format: 'a4'
+      orientation: "portrait",
+      unit: "mm",
+      format: "a4",
     });
 
-    const imgWidth = 210; // A4 width in mm
-    const pageHeight = 297; // A4 height in mm
+    const imgData = canvas.toDataURL("image/png");
+    const imgWidth = 210;
+    const pageHeight = 297;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
     let heightLeft = imgHeight;
     let position = 0;
 
-    // Add image to PDF
-    pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+    pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
     heightLeft -= pageHeight;
 
-    // Add new pages if content exceeds one page
-    while (heightLeft >= 0) {
-      position = heightLeft - imgHeight;
+    while (heightLeft > 0) {
+      position -= pageHeight;
       pdf.addPage();
-      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+      pdf.addImage(imgData, "PNG", 0, position, imgWidth, imgHeight);
       heightLeft -= pageHeight;
     }
 
-    // Save the PDF with template name in filename
-    const fileName = `${data.name || 'resume'}_${templateLayout}.pdf`;
-    pdf.save(fileName);
-    
+    // 8️⃣ Download
+    pdf.save(`${data.name || "resume"}_${templateLayout}.pdf`);
+
     return true;
-  } catch (error) {
-    console.error('Error generating PDF:', error);
+  } catch (err) {
+    console.error("PDF generation failed:", err);
+    if (container) document.body.removeChild(container);
     return false;
   }
 };

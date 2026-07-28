@@ -7,37 +7,28 @@
   "summary": "",
   "experience": [
     {
-      "role": "",
+      "title": "",
       "company": "",
       "startDate": "",
       "endDate": "",
       "description": "",
-      "keyAchievements": [
-        "",
-        "",
-        ""
-      ]
+      "keyAchievements": []
     }
   ],
   "education": [
     {
+      "institution": "",
       "degree": "",
       "school": "",
       "year": "",
       "description": ""
     }
   ],
-  "skills": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  "languages": [
-    "",
-    "",
-    ""
-  ]
+   "skills": [
+    {
+      "skillName": "",
+      "description": ""
+    }
+   ],
+  "languages": ["", "", ""]
 }

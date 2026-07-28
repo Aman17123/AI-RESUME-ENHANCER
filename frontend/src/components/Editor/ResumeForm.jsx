@@ -1,10 +1,5 @@
 "use client";
 
-/**
- * ResumeForm.jsx
- * Fixed version — local universities, stable IDs, no typing-flicker bug
- */
-
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useResumeStore } from "../../store/resumeStore";
 import { Country, State, City } from "country-state-city";
@@ -31,11 +26,20 @@ import {
   Info,
   AlertCircle,
 } from "lucide-react";
-
 import { UNIVERSITIES } from "../../data/universities";
 
 /* ============================================================
-   LOCAL DATA: Degrees + Fields of Study (embedded)
+   TEMPLATE → ALLOWED SECTIONS
+   ============================================================ */
+const TEMPLATE_SECTIONS = {
+  classic: ["basic", "education", "experience", "skills", "projects", "languages", "certifications"],
+  minimal: ["basic", "skills", "languages"],
+  modern: ["basic", "education", "experience", "skills", "projects"],
+  professional: ["basic", "education", "experience", "skills", "projects", "languages", "certifications"],
+};
+
+/* ============================================================
+   LOCAL DATA
    ============================================================ */
 const DEGREE_LIST = [
   "Bachelor of Science (BSc)",
@@ -87,7 +91,7 @@ const FIELD_OF_STUDY_LIST = [
 ];
 
 /* ============================================================
-   ICON MAP + fallback
+   ICON MAP
    ============================================================ */
 const ICONS = {
   name: <User className="h-4 w-4" />,
@@ -95,7 +99,7 @@ const ICONS = {
   email: <Mail className="h-4 w-4" />,
   phone: <Phone className="h-4 w-4" />,
   location: <MapPin className="h-4 w-4" />,
-  website: <Link className="h-4 w-4" />,
+  websiteOrGithub: <Link className="h-4 w-4" />,
   linkedin: <Link className="h-4 w-4" />,
   summary: <Edit3 className="h-4 w-4" />,
   institution: <GraduationCap className="h-4 w-4" />,
@@ -104,6 +108,7 @@ const ICONS = {
   startDate: <Calendar className="h-4 w-4" />,
   endDate: <Calendar className="h-4 w-4" />,
   skillName: <Award className="h-4 w-4" />,
+  description: <Edit3 className="h-4 w-4" />,
   level: <Star className="h-4 w-4" />,
   language: <MessageSquare className="h-4 w-4" />,
   proficiency: <Star className="h-4 w-4" />,
@@ -121,7 +126,7 @@ const ICONS = {
 const fallbackIcon = <Edit3 className="h-4 w-4" />;
 
 /* ============================================================
-   FIELD PROPS + validation helpers
+   FIELD CONFIG
    ============================================================ */
 const FIELD_PROPS = {
   email: {
@@ -129,26 +134,34 @@ const FIELD_PROPS = {
     autoComplete: "email",
     validate: (v) => (/^\S+@\S+\.\S+$/.test(v) || v === "" ? null : "Invalid email"),
   },
+
   phone: {
     type: "tel",
     autoComplete: "tel",
     pattern: "[0-9+() -]*",
     validate: (v) => (/^[0-9+() -]*$/.test(v) ? null : "Invalid phone"),
   },
-  website: {
-    type: "url",
-    validate: (v) => (v === "" || /^https?:\/\//i.test(v) ? null : "URL must start with https://"),
-  },
+
+  websiteOrGithub: { type: "url" },
   linkedin: { type: "url" },
   projectUrl: { type: "url" },
   credentialUrl: { type: "url" },
+
+  cgpa: {
+    type: "number",
+    validate: (v) =>
+      v === "" || (!isNaN(v) && v >= 0 && v <= 10)
+        ? null
+        : "CGPA must be between 0 and 10",
+  },
+
   startDate: { type: "date" },
   endDate: { type: "date" },
   date: { type: "date" },
 };
 
 /* ============================================================
-   SECTION CONFIG (all sections)
+   SECTION CONFIG
    ============================================================ */
 const SECTION_CONFIG = {
   basic: {
@@ -158,15 +171,16 @@ const SECTION_CONFIG = {
     tip: "Keep contact details current.",
     isArray: false,
     fields: [
-      { name: "name" },
+      { name: "name", type: "text" },
       { name: "title" },
-      { name: "email" },
-      { name: "phone" },
+      { name: "email", type: "email" },
+      { name: "phone", type: "tel" },
       { name: "country", type: "autocomplete", source: "countries" },
       { name: "state", type: "autocomplete", source: "states" },
       { name: "city", type: "autocomplete", source: "cities" },
-      { name: "website" },
-      { name: "linkedin" },
+      // developer-friendly single field for GitHub or Website
+      { name: "websiteOrGithub", type: "url" },
+      { name: "linkedin", type: "url" },
       { name: "summary", multiline: true, span: 2 },
     ],
   },
@@ -187,6 +201,7 @@ const SECTION_CONFIG = {
       startDate: "",
       endDate: "",
       description: "",
+      cgpa: "",
     },
     fields: [
       { name: "institution", type: "autocomplete", source: "universities" },
@@ -195,6 +210,7 @@ const SECTION_CONFIG = {
       { name: "location", type: "autocomplete", source: "cities" },
       "startDate",
       "endDate",
+      "cgpa",
       { name: "description", multiline: true, span: 2 },
     ],
   },
@@ -225,15 +241,16 @@ const SECTION_CONFIG = {
     ],
   },
 
+  // 🔥 UPDATED SKILLS SECTION
   skills: {
     title: "Skills",
     icon: <Award className="h-5 w-5" />,
     description: "Technical & soft skills",
-    tip: "Prioritize relevant skills.",
+    tip: "Add a short description for each skill.",
     isArray: true,
     titleField: "skillName",
-    defaultItem: { id: "", skillName: "", level: "" },
-    fields: ["skillName", "level"],
+    defaultItem: { id: "", skillName: "", description: "" },
+    fields: ["skillName", { name: "description", multiline: true, span: 2 }],
   },
 
   languages: {
@@ -304,11 +321,13 @@ const SECTION_CONFIG = {
 };
 
 /* ============================================================
-   country-state-city helpers & maps (precomputed)
+   COUNTRY HELPERS
    ============================================================ */
 const ALL_COUNTRIES = Country.getAllCountries() || [];
-const COUNTRY_NAME_TO_ISO = Object.fromEntries(ALL_COUNTRIES.map((c) => [c.name.toLowerCase(), c.isoCode]));
-const COUNTRY_ISO_TO_NAME = Object.fromEntries(ALL_COUNTRIES.map((c) => [c.isoCode, c.name]));
+
+const COUNTRY_NAME_TO_ISO = Object.fromEntries(
+  ALL_COUNTRIES.map((c) => [c.name.toLowerCase(), c.isoCode])
+);
 
 function getCountryList() {
   return ALL_COUNTRIES.map((c) => c.name);
@@ -324,26 +343,25 @@ function getCityListForState(countryIso, stateIso) {
   return City.getCitiesOfState(countryIso, stateIso).map((c) => c.name);
 }
 
-/* ============================================================
-   Universities (local list) helper
-   ============================================================ */
 async function fetchUniversities(query) {
   if (!query || query.length < 1) return [];
-
   const q = query.toLowerCase();
-  const results = UNIVERSITIES.filter((u) => u.toLowerCase().includes(q));
-  return results.slice(0, 50);
+  return UNIVERSITIES.filter((u) => u.toLowerCase().includes(q)).slice(0, 50);
 }
 
 /* ============================================================
-   Main component - hook order safe
+   MAIN COMPONENT
    ============================================================ */
-export default function ResumeForm({ activeSection }) {
-  // mount guard prevents SSR -> CSR mismatch flash
+export default function ResumeForm({ activeSection, selectedTemplate = "classic" }) {
+  // Which sections this template allows
+  const allowedSections = TEMPLATE_SECTIONS[selectedTemplate] || [];
+  const isSectionAllowed = allowedSections.includes(activeSection);
+
+  // mount guard
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  // zustand selectors (top-level hooks)
+  // Zustand store
   const formData = useResumeStore((s) => s.data);
   const updateField = useResumeStore((s) => s.updateField);
   const updateArrayField = useResumeStore((s) => s.updateArrayField);
@@ -351,9 +369,13 @@ export default function ResumeForm({ activeSection }) {
   const removeArrayItem = useResumeStore((s) => s.removeArrayItem);
   const setFullData = useResumeStore((s) => s.setFullData);
 
-  const config = useMemo(() => SECTION_CONFIG[activeSection], [activeSection]);
+  // Only load section config if allowed
+  const config = useMemo(() => {
+    if (!isSectionAllowed) return null;
+    return SECTION_CONFIG[activeSection];
+  }, [activeSection, isSectionAllowed]);
 
-  /* ---------------- Autosave ---------------- */
+  /* Autosave */
   const AUTOSAVE_KEY = "resume_autosave_v_final";
   const autosaveTimer = useRef(null);
   const scheduleAutosave = useCallback((data) => {
@@ -370,25 +392,21 @@ export default function ResumeForm({ activeSection }) {
     scheduleAutosave(formData);
   }, [formData, mounted, scheduleAutosave]);
 
+  /* Load saved data */
   useEffect(() => {
     if (!mounted) return;
     try {
       const raw = localStorage.getItem(AUTOSAVE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        if (!formData || Object.keys(formData).length === 0) {
-          setFullData(parsed);
-        }
+      if (raw && Object.keys(formData || {}).length === 0) {
+        setFullData(JSON.parse(raw));
       }
     } catch {}
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mounted]);
+  }, [mounted, formData, setFullData]);
 
-  /* ---------------- ID Sanitization (do once when mounted) ---------------- */
+  /* ID fix */
   useEffect(() => {
     if (!mounted) return;
 
-    // add stable ids for array items if missing — do not do this during render
     const updated = { ...(formData || {}) };
     let changed = false;
 
@@ -410,18 +428,22 @@ export default function ResumeForm({ activeSection }) {
     if (changed) {
       setFullData(updated);
     }
-    // run once on mount only
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mounted]);
+  }, [mounted, formData, setFullData]);
 
-  /* ---------------- Handlers ---------------- */
-  const handleFieldChange = useCallback((field, value) => {
-    updateField(field, value);
-  }, [updateField]);
+  /* Handlers */
+  const handleFieldChange = useCallback(
+    (field, value) => {
+      updateField(field, value);
+    },
+    [updateField]
+  );
 
-  const handleArrayFieldChange = useCallback((arrayName, index, field, value) => {
-    updateArrayField(arrayName, index, field, value);
-  }, [updateArrayField]);
+  const handleArrayFieldChange = useCallback(
+    (arrayName, index, field, value) => {
+      updateArrayField(arrayName, index, field, value);
+    },
+    [updateArrayField]
+  );
 
   const handleAdd = useCallback(() => {
     if (!config?.defaultItem) return;
@@ -429,18 +451,22 @@ export default function ResumeForm({ activeSection }) {
     addArrayItem(activeSection, item);
   }, [config, addArrayItem, activeSection]);
 
-  const handleMove = useCallback((field, index, dir) => {
-    const arr = [...(formData[field] || [])];
-    const to = index + dir;
-    if (to < 0 || to >= arr.length) return;
-    const item = arr[index];
-    arr.splice(index, 1);
-    arr.splice(to, 0, item);
-    setFullData({ ...formData, [field]: arr });
-    scheduleAutosave({ ...formData, [field]: arr });
-  }, [formData, setFullData, scheduleAutosave]);
+  const handleMove = useCallback(
+    (field, index, dir) => {
+      const arr = [...(formData[field] || [])];
+      const to = index + dir;
+      if (to < 0 || to >= arr.length) return;
+      const item = arr[index];
+      arr.splice(index, 1);
+      arr.splice(to, 0, item);
+      const next = { ...formData, [field]: arr };
+      setFullData(next);
+      scheduleAutosave(next);
+    },
+    [formData, setFullData, scheduleAutosave]
+  );
 
-  /* ---------------- Conditional render ---------------- */
+  /* Render Logic */
   if (!mounted) return <PolishedSkeleton />;
   if (!config) return <EmptyState />;
 
@@ -467,51 +493,73 @@ export default function ResumeForm({ activeSection }) {
 }
 
 /* ============================================================
-   ArraySection - sanitized, stable-keyed
-   (NO runtime id generation — uses ids already present)
+   ArraySection
    ============================================================ */
-const ArraySection = React.memo(({ name, items = [], fields, titleField, onChange, onMove, onRemove, onAdd }) => {
+const ArraySection = React.memo(function ArraySection({
+  name,
+  items = [],
+  fields,
+  titleField,
+  onChange,
+  onMove,
+  onRemove,
+  onAdd,
+}) {
   return (
     <div className="space-y-4">
       {items.map((item, index) => {
         const safeItem = typeof item === "object" && item !== null ? item : {};
-        // Ensure we have a key — items should have been sanitized on mount
         const key = safeItem.id || `${name}-${index}`;
 
         return (
           <div key={key} className="border border-slate-200 rounded-xl p-5 bg-white shadow-sm">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
               <div>
-                <h4 className="text-lg font-semibold text-slate-900">{safeItem[titleField] || `${capitalize(name)} #${index + 1}`}</h4>
-                <p className="text-xs text-slate-400 mt-1">{safeItem.company || safeItem.institution || ""}</p>
+                <h4 className="text-lg font-semibold text-slate-900">
+                  {safeItem[titleField] || `${capitalize(name)} #${index + 1}`}
+                </h4>
+                <p className="text-xs text-slate-400 mt-1">
+                  {safeItem.company || safeItem.institution || ""}
+                </p>
               </div>
 
               <div className="flex gap-2 items-center">
-                <IconBtn subtle onClick={() => onMove(name, index, -1)} title="Move up"><ArrowUp className="w-4 h-4" /></IconBtn>
-                <IconBtn subtle onClick={() => onMove(name, index, 1)} title="Move down"><ArrowDown className="w-4 h-4" /></IconBtn>
-                <IconBtn danger onClick={() => onRemove(index)} title="Remove"><Trash className="w-4 h-4" /></IconBtn>
+                <IconBtn subtle onClick={() => onMove(name, index, -1)} title="Move up">
+                  <ArrowUp className="w-4 h-4" />
+                </IconBtn>
+                <IconBtn subtle onClick={() => onMove(name, index, 1)} title="Move down">
+                  <ArrowDown className="w-4 h-4" />
+                </IconBtn>
+                <IconBtn danger onClick={() => onRemove(index)} title="Remove">
+                  <Trash className="w-4 h-4" />
+                </IconBtn>
               </div>
             </div>
 
-            <FieldRenderer fields={fields} data={safeItem} onChange={(field, value) => onChange(name, index, field, value)} />
+            <FieldRenderer
+              fields={fields}
+              data={safeItem}
+              onChange={(field, value) => onChange(name, index, field, value)}
+            />
           </div>
         );
       })}
 
-      <div>
-        <button onClick={onAdd} className="w-full flex items-center justify-center gap-2 border border-slate-200 text-slate-700 hover:bg-slate-50 px-4 py-3 rounded-lg transition">
-          <PlusCircle className="h-5 w-5" />
-          Add {capitalize(name)}
-        </button>
-      </div>
+      <button
+        onClick={onAdd}
+        className="w-full flex items-center justify-center gap-2 border border-slate-200 text-slate-700 hover:bg-slate-50 px-4 py-3 rounded-lg transition"
+      >
+        <PlusCircle className="h-5 w-5" />
+        Add {capitalize(name)}
+      </button>
     </div>
   );
 });
 
 /* ============================================================
-   FieldRenderer - layout + wiring to InputField
+   FieldRenderer
    ============================================================ */
-const FieldRenderer = React.memo(({ fields, data, onChange }) => {
+const FieldRenderer = React.memo(function FieldRenderer({ fields, data, onChange }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {fields.map((f) => {
@@ -541,7 +589,7 @@ const FieldRenderer = React.memo(({ fields, data, onChange }) => {
 });
 
 /* ============================================================
-   InputField - handles normal inputs + autocomplete sources
+   InputField
    ============================================================ */
 function debounce(fn, delay = 250) {
   let timer;
@@ -562,12 +610,10 @@ const InputField = React.memo(function InputField({
   source,
 }) {
   const logic = FIELD_PROPS[field] || {};
-
   const [error, setError] = useState("");
   const [options, setOptions] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // stable subscription to global form for context (country/state)
   const form = useResumeStore((s) => s.data);
 
   useEffect(() => {
@@ -584,7 +630,7 @@ const InputField = React.memo(function InputField({
       setError("");
       return true;
     },
-    [logic.validate]
+    [logic]
   );
 
   const fetchOptions = useCallback(
@@ -605,9 +651,13 @@ const InputField = React.memo(function InputField({
           const selectedCountry = form?.country || "";
           const iso = COUNTRY_NAME_TO_ISO[(selectedCountry || "").toLowerCase()];
           if (iso) {
-            results = getStateListForCountry(iso).map((s) => s.name).filter((s) => s.toLowerCase().includes(query.toLowerCase()));
+            results = getStateListForCountry(iso)
+              .map((s) => s.name)
+              .filter((s) => s.toLowerCase().includes(query.toLowerCase()));
           } else {
-            const allStates = ALL_COUNTRIES.flatMap((c) => State.getStatesOfCountry(c.isoCode).map((s) => s.name));
+            const allStates = ALL_COUNTRIES.flatMap((c) =>
+              State.getStatesOfCountry(c.isoCode).map((s) => s.name)
+            );
             results = allStates.filter((s) => s.toLowerCase().includes(query.toLowerCase()));
           }
         } else if (source === "cities") {
@@ -617,7 +667,9 @@ const InputField = React.memo(function InputField({
           let matched = [];
           if (countryIso && selectedState) {
             const states = getStateListForCountry(countryIso);
-            const stateObj = states.find((s) => s.name.toLowerCase() === selectedState.toLowerCase());
+            const stateObj = states.find(
+              (s) => s.name.toLowerCase() === selectedState.toLowerCase()
+            );
             if (stateObj) matched = getCityListForState(countryIso, stateObj.isoCode);
           }
           if (!matched.length && countryIso) {
@@ -661,7 +713,9 @@ const InputField = React.memo(function InputField({
             <input
               value={value}
               placeholder=" "
-              className={`peer w-full px-4 py-3 border rounded-lg text-sm bg-white ${error ? "border-red-400" : "border-slate-200"} focus:outline-none focus:ring-2 focus:ring-blue-200`}
+              className={`peer w-full px-4 py-3 border rounded-lg text-sm bg-white ${
+                error ? "border-red-400" : "border-slate-200"
+              } focus:outline-none focus:ring-2 focus:ring-blue-200`}
               onChange={(e) => handleInput(e.target.value)}
             />
 
@@ -692,7 +746,9 @@ const InputField = React.memo(function InputField({
             autoComplete={logic.autoComplete}
             inputMode={logic.inputMode}
             pattern={logic.pattern}
-            className={`peer w-full px-4 py-3 border rounded-lg text-sm bg-white ${error ? "border-red-400" : "border-slate-200"} focus:outline-none focus:ring-2 focus:ring-blue-200`}
+            className={`peer w-full px-4 py-3 border rounded-lg text-sm bg-white ${
+              error ? "border-red-400" : "border-slate-200"
+            } focus:outline-none focus:ring-2 focus:ring-blue-200`}
             onChange={(e) => handleInput(e.target.value)}
             onBlur={() => validate(value)}
           />
@@ -701,7 +757,9 @@ const InputField = React.memo(function InputField({
             value={value}
             placeholder=" "
             rows={4}
-            className={`peer w-full px-4 py-3 border rounded-lg text-sm bg-white ${error ? "border-red-400" : "border-slate-200"} focus:outline-none focus:ring-2 focus:ring-blue-200`}
+            className={`peer w-full px-4 py-3 border rounded-lg text-sm bg-white ${
+              error ? "border-red-400" : "border-slate-200"
+            } focus:outline-none focus:ring-2 focus:ring-blue-200`}
             onChange={(e) => handleInput(e.target.value)}
             onBlur={() => validate(value)}
           />
@@ -726,7 +784,7 @@ const InputField = React.memo(function InputField({
 });
 
 /* ============================================================
-   UI helpers
+   UI Helpers
    ============================================================ */
 function Panel({ title, icon, description, tip, children }) {
   return (
@@ -759,7 +817,9 @@ function Panel({ title, icon, description, tip, children }) {
 }
 
 function IconBtn({ children, danger, subtle, ...props }) {
-  const base = subtle ? "p-2 rounded-md hover:bg-slate-50 text-slate-500" : "p-2 rounded-md hover:bg-slate-50 text-slate-600";
+  const base = subtle
+    ? "p-2 rounded-md hover:bg-slate-50 text-slate-500"
+    : "p-2 rounded-md hover:bg-slate-50 text-slate-600";
   const dangerClass = danger ? "text-red-500 hover:bg-red-50" : "";
   return (
     <button {...props} className={`${base} ${dangerClass} transition`}>
@@ -788,16 +848,16 @@ function EmptyState() {
         <Settings className="h-8 w-8 text-slate-400" />
       </div>
       <h3 className="text-lg font-medium text-slate-900 mb-2">No Section</h3>
-      <p className="text-sm">Select a valid section to edit.</p>
+      <p className="text-sm">This section is not available for this template.</p>
     </div>
   );
 }
 
 /* ============================================================
-   Small helpers
+   Helpers
    ============================================================ */
 const capitalize = (s) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : "");
-const capitalizeWords = (str) => (str ? str.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase()) : "");
+const capitalizeWords = (str) =>
+  str ? str.replace(/([A-Z])/g, " $1").replace(/^./, (s) => s.toUpperCase()) : "";
 
-/* Export helpers if you need them elsewhere */
 export { getCountryList, getStateListForCountry, getCityListForState };

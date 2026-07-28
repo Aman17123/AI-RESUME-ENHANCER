@@ -29,7 +29,7 @@ It helps job seekers improve resume quality, tailor resumes to specific job desc
     Deployment	Vercel / Render / AWS / Railway
     🛠️ Installation & Setup
     1️⃣ Clone the repository
-    git clone https://github.com/yourusername/ai-resume-enhancer.git
+    git clone https://github.com/Aman17123/ai-resume-enhancer.git
     cd ai-resume-enhancer
 
 2️⃣ Install dependencies
