@@ -7,6 +7,9 @@ import HeroResumeSection from "./_component/HeroResumeSection";
 import UploadSection from "./_component/Mid";
 import Footer from "./_component/Footer";
 import HoverResume from "./_component/HoverResume";
+import PlansSection from "./_component/PlansSection";
+import TestimonialsSection from "./_component/TestimonialsSection";
+import FAQSection from "./_component/FAQSection";
 import "./globals.css";
 
 // Dynamically import ResumeHighlight (client-side only)
@@ -22,7 +25,10 @@ export default function HomePage() {
       <ResumeHighlight />
       <HeroResumeSection />
       <UploadSection />
+      <PlansSection />
+      <TestimonialsSection />
       <HoverResume />
+      <FAQSection />
       <Footer />
     </div>
   );

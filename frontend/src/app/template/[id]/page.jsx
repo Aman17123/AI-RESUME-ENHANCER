@@ -9,6 +9,8 @@ import ModernTemplate from "../../../components/ResumeRenderers/ModernTemplate";
 import MinimalTemplate from "../../../components/ResumeRenderers/MinimalTemplate"; 
 import ProfessionalTemplate from "../../../components/ResumeRenderers/ProfessionalTemplate";
 import { downloadResumePDF } from "../../../utils/downloadPDF";
+import { saveResumeToCloud } from "../../../lib/resumeService";
+import { createClient } from "../../../lib/supabase";
 import {
   FileText, Download, Share, Eye, Monitor, Smartphone,
   Save, Maximize, Minimize, Type, Settings,
@@ -35,6 +37,16 @@ export default function EditorPage() {
   const [showNotification, setShowNotification] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState("");
   const [isExporting, setIsExporting] = useState(false);
+  const [isPickerOpen, setIsPickerOpen] = useState(false);
+
+  const deepClone = (obj) => JSON.parse(JSON.stringify(obj));
+
+  const templateOptions = ["classic", "modern", "minimal", "professional"];
+
+  const pickTemplate = (layout) => {
+    setIsPickerOpen(false);
+    handleTemplateChange(layout);
+  };
 
     useEffect(() => {
       let mounted = true;
@@ -66,6 +78,35 @@ export default function EditorPage() {
             setTemplateName("New Resume");
             setReady(true);
             return;
+          }
+
+          // Optional: load a saved resume from the cloud via ?resume=<id>
+          const resumeId = new URLSearchParams(window.location.search).get(
+            "resume"
+          );
+
+          if (resumeId) {
+            try {
+              const sessionId = sessionStorage.getItem("cvforge_resume_id");
+              if (sessionId !== resumeId) {
+                sessionStorage.setItem("cvforge_resume_id", resumeId);
+              }
+            } catch {}
+
+            const supabase = createClient();
+            const { data: saved } = await supabase
+              .from("resumes")
+              .select("id, name, template, data")
+              .eq("id", resumeId)
+              .maybeSingle();
+
+            if (saved) {
+              setFullData(saved.data);
+              setTemplateName(saved.name || "Untitled Resume");
+              setTemplateLayout(saved.template || "classic");
+              setReady(true);
+              return;
+            }
           }
 
           let templateJSON = null;
@@ -143,8 +184,21 @@ export default function EditorPage() {
   const handleSave = async () => {
     setIsSaving(true);
     try {
-      await saveResume(data);
-      setNotificationMessage("Resume saved successfully!");
+      const result = await saveResumeToCloud({
+        name: templateName || data.name || "Untitled Resume",
+        template: data?._template || templateLayout,
+        data,
+      });
+
+      if (result.ok) {
+        await saveResume(data); // localStorage backup
+        setNotificationMessage(result.message || "Resume saved successfully!");
+      } else if (result.auth) {
+        setNotificationMessage(result.message);
+      } else {
+        setNotificationMessage("Saved offline. Sign in to save to the cloud.");
+        await saveResume(data); // localStorage fallback
+      }
       setShowNotification(true);
       setTimeout(() => {
         setShowNotification(false);
@@ -175,14 +229,23 @@ export default function EditorPage() {
     setTimeout(() => setShowNotification(false), 2000);
   };
 
-  const handleShare = () => {
-    setNotificationMessage("Share functionality coming soon!");
+  const handleShare = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setNotificationMessage("Link copied to clipboard!");
+    } catch {
+      setNotificationMessage("Share link copied to clipboard!");
+    }
     setShowNotification(true);
     setTimeout(() => setShowNotification(false), 2000);
   };
 
   const handleDuplicate = () => {
-    setNotificationMessage("Resume duplicated successfully!");
+    const copy = deepClone(data);
+    copy.name = data.name ? `${data.name} (copy)` : "Untitled Resume (copy)";
+    setFullData(copy);
+    setTemplateName(copy.name || "Untitled Resume (copy)");
+    setNotificationMessage("Resume duplicated!");
     setShowNotification(true);
     setTimeout(() => setShowNotification(false), 2000);
   };
@@ -229,8 +292,6 @@ export default function EditorPage() {
 
   return (
     <>
-      {/* (The rest of your file is unchanged below) */}
-
       <div className="min-h-screen bg-slate-50 flex flex-col">
 
         {/* Top Navigation Bar */}
@@ -293,8 +354,6 @@ export default function EditorPage() {
           </div>
         </nav>
 
-        {/* Sidebar + Editor + Preview layout continues here... (unchanged) */}
-        {/* ⬇️ ⬇️ ⬇️  — the rest of your file is identical — ⬇️ ⬇️ ⬇️ */}
         {/* Main Content Area */}
         <div className="flex-1 flex overflow-hidden">
           {/* Left Sidebar - Section Navigation */}
@@ -465,7 +524,7 @@ export default function EditorPage() {
                       </div>
 
                       <div className="px-8 py-4 bg-slate-50 border-t border-slate-200 text-center text-xs text-slate-500 flex items-center justify-between">
-                        <div>Created with Resume Studio</div>
+                        <div>Created with CVForge</div>
                         <div>Last saved: {new Date().toLocaleDateString()}</div>
                       </div>
                     </div>
@@ -484,7 +543,7 @@ export default function EditorPage() {
                   <div className="flex justify-between items-center">
                     <div className="flex items-center gap-3">
                       <button
-                        onClick={() => handleTemplateChange("classic")}
+                        onClick={() => setIsPickerOpen(true)}
                         className="flex items-center gap-1.5 text-slate-600 hover:text-slate-900 text-sm font-medium"
                       >
                         <File className="h-4 w-4" />
@@ -544,36 +603,39 @@ export default function EditorPage() {
 
       </div>
 
-      {/* Global Styles */}
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: #f8fafc;
-          border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #cbd5e1;
-          border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #94a3b8;
-        }
-        @keyframes fade-in {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in {
-          animation: fade-in 0.3s ease-out;
-        }
-      `}</style>
+      {/* Template Picker Modal */}
+      {isPickerOpen && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/50 p-4">
+          <div className="bg-white rounded-xl shadow-xl w-full max-w-md p-6">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold text-slate-900">Choose a Template</h3>
+              <button
+                onClick={() => setIsPickerOpen(false)}
+                className="text-slate-500 hover:text-slate-900 text-xl leading-none cursor-pointer"
+                aria-label="Close"
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              {templateOptions.map((t) => (
+                <button
+                  key={t}
+                  onClick={() => pickTemplate(t)}
+                  className={`p-4 rounded-lg border-2 text-sm font-medium capitalize transition-colors cursor-pointer ${
+                    templateLayout === t
+                      ? "border-blue-500 bg-blue-50 text-blue-700"
+                      : "border-slate-200 hover:border-blue-300 text-slate-700"
+                  }`}
+                >
+                  {t}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

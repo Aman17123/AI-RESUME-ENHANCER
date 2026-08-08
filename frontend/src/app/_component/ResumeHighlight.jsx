@@ -105,9 +105,8 @@ export default function ResumeHighlight() {
           viewport={{ once: true }}
           className="text-3xl md:text-5xl font-semibold mt-10 text-center josefin-sans mb-16"
         >
-          <span className="text-[#4da3ff] underline">Lorem Ipsum</span> is
-          simply
-          <br /> dummy
+          <span className="text-[#4da3ff] underline">Hover</span> the resume,
+          <br /> and watch it
         </motion.h2>
 
         <div className="relative flex justify-center items-center mt-10">

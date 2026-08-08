@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { createClient } from "../../lib/supabase";
 
 export default function Navbar({
   logoColor = "#021F81",
@@ -8,11 +9,33 @@ export default function Navbar({
   scrollBgColor = "rgba(255,255,255,0.9)",
 }) {
   const [scrolled, setScrolled] = useState(false);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    let mounted = true;
+    const supabase = createClient();
+    const loadUser = async () => {
+      const { data } = await supabase.auth.getUser();
+      if (mounted) setUser(data.user);
+    };
+    loadUser();
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (mounted) setUser(session?.user ?? null);
+    });
+
+    return () => {
+      mounted = false;
+      subscription?.unsubscribe();
+    };
   }, []);
 
   return (
@@ -29,20 +52,33 @@ export default function Navbar({
         {/* LOGO */}
         <Link
           href="/"
-          className="text-xl md:text-2xl font-semibold select-none hover:opacity-80 transition-opacity"
+          className="text-xl md:text-2xl font-semibold select-none hover:opacity-80 transition-opacity flex items-center gap-2"
           style={{ color: logoColor }}
         >
-          Logo
+          <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg text-white text-sm font-bold" style={{ backgroundColor: buttonColor }}>
+            CV
+          </span>
+          CVForge
         </Link>
 
         {/* BUTTON */}
-        <Link
-          href="/login"
-          className="text-sm md:text-base text-white px-4  md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-all duration-300 shadow-sm"
-          style={{ backgroundColor: buttonColor }}
-        >
-          Login / Sign up
-        </Link>
+        {user ? (
+          <Link
+            href="/dashboard"
+            className="text-sm md:text-base text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-all duration-300 shadow-sm"
+            style={{ backgroundColor: buttonColor }}
+          >
+            Dashboard
+          </Link>
+        ) : (
+          <Link
+            href="/login"
+            className="text-sm md:text-base text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full hover:opacity-90 transition-all duration-300 shadow-sm"
+            style={{ backgroundColor: buttonColor }}
+          >
+            Login / Sign up
+          </Link>
+        )}
       </div>
     </nav>
   );

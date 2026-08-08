@@ -32,7 +32,7 @@ export default function HoverResume() {
       {/* Main Section */}
       <div className="text-center josefin-sans max-w-4xl mt-20">
         <h1 className="text-2xl font-bold text-gray-900 mb-2">
-          Lorem Ipsum
+          Build a Resume That Gets You Hired
         </h1>
         <p className="text-gray-700 mb-12 leading-relaxed">
           This is where the magic happens: our AI instantly analyzes your
