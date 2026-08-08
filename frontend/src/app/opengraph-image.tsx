@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "CVForge — AI Resume Builder";
+export const alt = "AchiVAI — AI Resume Builder";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,10 +41,10 @@ export default function OpengraphImage() {
               fontWeight: 700,
             }}
           >
-            CV
+            A
           </div>
           <div style={{ color: "#ffffff", fontSize: 64, fontWeight: 700 }}>
-            CVForge
+            AchiVAI
           </div>
         </div>
         <div style={{ color: "#BFD3F2", fontSize: 32, textAlign: "center" }}>

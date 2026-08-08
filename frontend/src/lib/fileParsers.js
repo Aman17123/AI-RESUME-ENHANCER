@@ -1,9 +1,9 @@
 import { createRequire } from "module";
 import mammoth from "mammoth";
 
-// pdf-parse is CommonJS and has no proper ESM default export — load it via require.
+// pdf-parse v2 exposes a PDFParse class (CommonJS) — load it via require.
 const require = createRequire(import.meta.url);
-const pdfParse = require("pdf-parse");
+const { PDFParse } = require("pdf-parse");
 
 const MAX_CHARS = 30000;
 
@@ -12,15 +12,23 @@ export async function extractText(file, mimeType) {
   let text = "";
 
   if (mimeType === "application/pdf") {
-    const data = await pdfParse(buffer);
-    text = data.text;
+    const parser = new PDFParse({ data: buffer });
+    try {
+      const result = await parser.getText();
+      text = result.text;
+    } finally {
+      await parser.destroy();
+    }
   } else {
     // DOCX (and .doc fallback through mammoth)
     const result = await mammoth.extractRawText({ buffer });
     text = result.value;
   }
 
-  text = (text || "").replace(/\s+/g, " ").trim();
+  text = (text || "")
+    .replace(/\s+/g, " ")
+    .replace(/-- \d{1,5} of \d{1,5} --/g, "")
+    .trim();
 
   if (!text) {
     throw new Error(

@@ -23,34 +23,34 @@ const appUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 export const metadata = {
   metadataBase: new URL(appUrl),
   title: {
-    default: "CVForge — AI Resume Builder",
-    template: "%s | CVForge",
+    default: "AchiVAI — AI Resume Builder",
+    template: "%s | AchiVAI",
   },
   description:
-    "CVForge is an AI-powered resume builder that scans your resume, checks it against the job description, and helps you beat the ATS to get hired faster.",
-  applicationName: "CVForge",
+    "AchiVAI is an AI-powered resume builder that scans your resume, checks it against the job description, and helps you beat the ATS to get hired faster.",
+  applicationName: "AchiVAI",
   keywords: [
     "AI resume builder",
     "ATS resume checker",
     "free resume template",
     "resume optimizer",
     "job application helper",
-    "CVForge",
+    "AchiVAI",
   ],
   authors: [{ name: "Aman Nakoti" }],
   creator: "Aman Nakoti",
   openGraph: {
-    title: "CVForge — AI Resume Builder",
+    title: "AchiVAI — AI Resume Builder",
     description:
       "Beat the ATS and get hired faster. AI scans your resume, finds missing keywords, and gives actionable feedback.",
     url: appUrl,
-    siteName: "CVForge",
+    siteName: "AchiVAI",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CVForge — AI Resume Builder",
+    title: "AchiVAI — AI Resume Builder",
     description:
       "Beat the ATS and get hired faster with AI-powered resume analysis.",
   },
@@ -70,7 +70,7 @@ export const viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "CVForge",
+  name: "AchiVAI",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   url: appUrl,

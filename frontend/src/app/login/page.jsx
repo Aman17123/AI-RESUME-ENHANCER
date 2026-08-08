@@ -137,11 +137,11 @@ function LoginForm() {
       <div className="p-6 flex flex-col space-y-6">
         <div className="text-center">
           <h2 className="text-lg font-semibold text-neutral-300">
-            {mode === "signup" ? "Create your account" : "Welcome to CVForge"}
+            {mode === "signup" ? "Create your account" : "Welcome to AchiVAI"}
           </h2>
           <p className="text-sm text-neutral-400 mt-1">
             {mode === "signup"
-              ? "Join CVForge and build winning resumes"
+              ? "Join AchiVAI and build winning resumes"
               : "Sign in to manage your resumes"}
           </p>
         </div>
@@ -243,7 +243,7 @@ function LoginForm() {
 
         <div className="text-center text-sm text-neutral-400">
           <p>
-            {mode === "signup" ? "Already have an account?" : "New to CVForge?"}{" "}
+            {mode === "signup" ? "Already have an account?" : "New to AchiVAI?"}{" "}
             <button
               onClick={() => {
                 setMode(mode === "signup" ? "login" : "signup");

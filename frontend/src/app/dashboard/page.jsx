@@ -62,9 +62,9 @@ export default function DashboardPage() {
       <header className="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between shadow-sm">
         <div className="flex items-center gap-3">
           <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-900 text-white text-sm font-bold">
-            CV
+            A
           </span>
-          <h1 className="text-lg font-bold text-slate-900">CVForge Dashboard</h1>
+          <h1 className="text-lg font-bold text-slate-900">AchiVAI Dashboard</h1>
         </div>
 
         <div className="flex items-center gap-3">

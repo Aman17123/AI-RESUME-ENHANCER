@@ -63,7 +63,7 @@ export default function AnalysisPage() {
   const router = useRouter();
   const [result, setResult] = useState(() => {
     try {
-      const raw = sessionStorage.getItem("cvforge_result");
+      const raw = sessionStorage.getItem("achivai_result");
       return raw ? JSON.parse(raw) : null;
     } catch {
       return null;
@@ -203,7 +203,7 @@ export default function AnalysisPage() {
               href="/template"
               className="mt-6 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg text-sm font-medium shadow-sm transition-colors"
             >
-              <RotateCcw className="h-4 w-4" /> Rebuild with a CVForge template
+              <RotateCcw className="h-4 w-4" /> Rebuild with an AchiVAI template
             </Link>
           </div>
         </div>
